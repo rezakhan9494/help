@@ -1,3 +1,4 @@
 select * from public.eg_bpa_document ebd where buildingplanid = (select id from public.eg_bpa_buildingplan ebb where applicationno ='BP-SMB-2021-12-12-000194');
 
 
+"57025645-0134-4eb8-ad17-c7d38b9ef4f5"	"APPL_IDENTITYPROOF"	"e56642b4-32d9-4b18-93be-5d8adfd1ec71"		"ae3a9d21-f28d-49e2-b59a-b66f55657ad9"	"{""uploadedBy"": ""BPA Document Verifier"", ""uploadedTime"": 1643804322231}"	"74f05717-56d7-40d3-a07a-292b257cc0e4"	"74f05717-56d7-40d3-a07a-292b257cc0e4"	1639320268252	1643805480137
