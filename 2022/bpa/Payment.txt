@@ -26,3 +26,7 @@ BP-RRK-2021-12-16-000200 -> need to excyte qry -> 801845ad-9cc4-4eb6-99b9-5c87fc
 BP-BMC-2022-03-08-001511 -> All fine
 BP-BMC-2022-03-14-001690 -> APlication fee faild need reattamped
 BP-BDA-2022-04-07-002301 -> need to run qry -> a2d8369e-1767-472f-b6ca-ac6483273686,1649345041730,5148756558
+
+
+BP-BMC-2022-04-07-002306 -> APlication fee faild need reattamped
+BP-BMC-2022-03-14-001690 -> APlication fee faild need reattamped
