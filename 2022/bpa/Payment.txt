@@ -13,7 +13,6 @@ BP-BDA-2022-04-07-002301
 
 
 -- solution
-
 BP-CTC-2022-04-07-002331,PG_CTC_2022_04_07_009161_58,Transaction failed at gateway,CCAVENUE,111465239842,418.00
 BP-BMC-2022-02-28-001235,sucess-> backend fine 
 BP-BMC-2022-03-01-001255,Application fee not atatmpted
@@ -21,5 +20,7 @@ BP-BMC-2022-03-01-001253-> need to check ui bcz no wrk avl 5468
 BP-BAM-2022-03-08-001506-> all fine  FIELDINSPECTION_INPROGRESS
 BP-BMC-2022-03-10-001589 ->APlication fee faild need reattamped
 BP-BMC-2022-03-18-001821 -> APlication fee faild need reattamped
-BP-RRK-2021-12-16-000200 -> need to excyte qry -> 801845ad-9cc4-4eb6-99b9-5c87fc4dc35f, -3111494172
-
+BP-RRK-2021-12-16-000200 -> need to excyte qry -> 801845ad-9cc4-4eb6-99b9-5c87fc4dc35f
+BP-BMC-2022-03-08-001511 -> All fine
+BP-BMC-2022-03-14-001690 -> APlication fee faild need reattamped
+BP-BDA-2022-04-07-002301 -> need to run qry -> a2d8369e-1767-472f-b6ca-ac6483273686,1649345041730,5148756558
