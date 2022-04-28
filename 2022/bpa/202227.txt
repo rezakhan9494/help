@@ -9,3 +9,10 @@ APPROVE - 1649760151113
 
 
 PENDING_SANC_FEE_PAYMENT
+
+
+============
+
+
+select * from egcl_payment where id in (select paymentid from egcl_paymentdetail where billid in
+(select id from egcl_bill where consumercode='BP-BAM-2022-03-05-001397'))
