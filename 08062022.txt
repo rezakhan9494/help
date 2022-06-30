@@ -1,6 +1,0 @@
-delete the processInstance – 
-id = "c7a0f8c5-ce54-4c35-9c95-45034ca9b712" and application number = BP-CTC-2022-04-07-002317 and action = APPROVE
-
-BP-CTC-2022-05-31-003900, ->9178169275
-BP-BAM-2022-05-06-003306 ->  94399 37851
-db is fine need to login and check
