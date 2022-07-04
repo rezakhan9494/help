@@ -1,0 +1,37 @@
+--count of applications where status are not matching
+select count(*)
+from eg_bpa_buildingplan ebb 
+inner join (select distinct on(businessid) * from eg_wf_processinstance_v2 order by businessid,createdtime desc)
+		ewpv on ewpv.businessid=ebb.applicationno
+inner join eg_wf_state_v2 ewsv on ewsv.uuid=ewpv.status 
+where ebb.status<>ewsv.applicationstatus;
+
+--count of applications where status are matching
+select count(*)
+from eg_bpa_buildingplan ebb 
+inner join (select distinct on(businessid) * from eg_wf_processinstance_v2 order by businessid,createdtime desc)
+		ewpv on ewpv.businessid=ebb.applicationno
+inner join eg_wf_state_v2 ewsv on ewsv.uuid=ewpv.status 
+where ebb.status<>ewsv.applicationstatus;
+
+
+--required query: to show such applications
+select ebb.tenantid,ebb.applicationno,ewpv."action" as actionInProcessInstance,ebb.status as currentStatus
+,ewsv.applicationstatus as expectedStatus
+from eg_bpa_buildingplan ebb 
+inner join (select distinct on(businessid) * from eg_wf_processinstance_v2 order by businessid,createdtime desc)
+		ewpv on ewpv.businessid=ebb.applicationno
+inner join eg_wf_state_v2 ewsv on ewsv.uuid=ewpv.status 
+where ebb.status<>ewsv.applicationstatus;
+
+--update query for application status syn, use for single applicationNo-
+update eg_bpa_buildingplan set status=
+(select applicationStatus from 
+(select distinct on(businessid) * from eg_wf_processinstance_v2 ewpv order by businessid,createdtime desc) ewpv
+inner join eg_wf_state_v2 ewsv on ewsv.uuid=ewpv.status where ewpv.businessid ='BP-CTC-2022-03-24-001529')
+where applicationno ='BP-CTC-2022-03-24-001529';
+
+
+-- delete last processinstance 
+
+delete from eg_wf_processinstance_v2 where id=(select id from (select distinct on(businessid) * from eg_wf_processinstance_v2 ewpv order by businessid,createdtime desc) ewpv where ewpv.businessid='BP-CTC-2022-04-07-002317');

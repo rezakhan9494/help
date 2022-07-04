@@ -1,0 +1,2 @@
+kubectl get pods -n egov | grep bpa
+kubectl logs bpa-services-57d64dd58-gbc76 -n egov -f
