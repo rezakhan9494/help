@@ -1,0 +1,1238 @@
+noc_lastModifiedTime,noc.createdBy as noc_createdBy,noc.lastModifiedBy as noc_lastModifiedBy,noc.createdTime as noc_createdTime,noc.additionalDetails,noc.landId as noc_landId, nocdoc.id as noc_doc_id, nocdoc.additionalDetails as doc_details, nocdoc.documenttype as noc_doc_documenttype,nocdoc.filestoreid as noc_doc_filestore FROM eg_noc noc  LEFT OUTER JOIN eg_noc_document nocdoc ON nocdoc.nocid = noc.id WHERE 1=1  AND noc.tenantid=?  AND noc.sourceRefId = ?) result) result_offset WHERE offset_ > ? AND offset_ <= ? 
+2022-07-05 07:56:58.382+0000  INFO --- [80-exec-10] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=07dd59d3-f6de-46a4-8a90-220df6a5c6f8 : Response code sent: 200 
+2022-07-05 07:57:05.103+0000  INFO --- [80-exec-10] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=86afc55e-2550-4076-80b5-336d215bd3d8 : Received request URI: http://noc-services:8080/noc-services/v1/noc/thirdPartyData/getBuildingtypes  
+2022-07-05 07:57:05.103+0000  INFO --- [080-exec-5] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=df47af5d-ed3b-43c8-b247-4eb02c4f0e6f : Received request URI: http://noc-services:8080/noc-services/v1/noc/thirdPartyData/getFiredistricts  
+2022-07-05 07:57:05.104+0000  INFO --- [080-exec-5] o.egov.noc.service.NOCService            -- CORRELATION_ID=df47af5d-ed3b-43c8-b247-4eb02c4f0e6f : dataType inside method getThirdPartyData:getFiredistricts 
+2022-07-05 07:57:05.104+0000  INFO --- [80-exec-10] o.egov.noc.service.NOCService            -- CORRELATION_ID=86afc55e-2550-4076-80b5-336d215bd3d8 : dataType inside method getThirdPartyData:getBuildingtypes 
+2022-07-05 07:57:05.104+0000  INFO --- [080-exec-5] o.egov.noc.service.NOCService            -- CORRELATION_ID=df47af5d-ed3b-43c8-b247-4eb02c4f0e6f : url for fetching thirdparty data:https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFiredistricts/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes 
+2022-07-05 07:57:05.104+0000  INFO --- [80-exec-10] o.egov.noc.service.NOCService            -- CORRELATION_ID=86afc55e-2550-4076-80b5-336d215bd3d8 : url for fetching thirdparty data:https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getBuildingtypes 
+2022-07-05 07:57:05.105+0000  INFO --- [080-exec-5] o.e.t.h.RestTemplateLoggingInterceptor   -- CORRELATION_ID=df47af5d-ed3b-43c8-b247-4eb02c4f0e6f : Sending request to https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFiredistricts/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes with verb POST 
+2022-07-05 07:57:05.105+0000  INFO --- [80-exec-10] o.e.t.h.RestTemplateLoggingInterceptor   -- CORRELATION_ID=86afc55e-2550-4076-80b5-336d215bd3d8 : Sending request to https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getBuildingtypes with verb POST 
+2022-07-05 07:57:05.111+0000  INFO --- [080-exec-3] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=d1a28c03-df6b-4bdd-a417-dd77ff941e15 : Received request URI: http://noc-services:8080/noc-services/v1/noc/thirdPartyData/getFireStations  
+2022-07-05 07:57:05.113+0000  INFO --- [080-exec-3] o.egov.noc.service.NOCService            -- CORRELATION_ID=d1a28c03-df6b-4bdd-a417-dd77ff941e15 : dataType inside method getThirdPartyData:getFireStations 
+2022-07-05 07:57:05.113+0000  INFO --- [080-exec-3] o.egov.noc.service.NOCService            -- CORRELATION_ID=d1a28c03-df6b-4bdd-a417-dd77ff941e15 : url for fetching thirdparty data:https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes 
+2022-07-05 07:57:05.114+0000  INFO --- [080-exec-3] o.e.t.h.RestTemplateLoggingInterceptor   -- CORRELATION_ID=d1a28c03-df6b-4bdd-a417-dd77ff941e15 : Sending request to https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes with verb POST 
+^C
+root@SUJOGBASTION:/home/master09# ll
+total 108
+drwxr-xr-x 19 master09 master09 4096 Jul  4 11:50 ./
+drwxr-xr-x 12 root     root     4096 Feb 15 16:19 ../
+-rw-------  1 master09 master09 1868 Jul  4 14:20 .bash_history
+-rw-r--r--  1 master09 master09  220 Feb 25  2020 .bash_logout
+-rw-r--r--  1 master09 master09 3771 Feb 25  2020 .bashrc
+drwx------ 14 master09 master09 4096 Jul  4 11:21 .cache/
+drwx------ 13 master09 master09 4096 Jul  4 11:14 .config/
+drwx------  3 master09 master09 4096 Jun 29 14:08 .dbus/
+drwxr-xr-x  2 master09 master09 4096 Jun 27 11:11 Desktop/
+drwx------  2 master09 master09 4096 Jul  4 11:50 Downloads/
+drwxrwxr-x  3 master09 master09 4096 Jun 30 20:03 .eclipse/
+drwx------  3 master09 master09 4096 Jun 24 14:12 .gnupg/
+drwxrwxr-x  2 master09 master09 4096 Jul  4 10:01 .ipython/
+drwxrwxr-x  3 master09 master09 4096 Jul  4 11:13 .jupyter/
+drwxr-xr-x  3 master09 master09 4096 Jun 24 14:08 .local/
+drwx------  5 master09 master09 4096 Jun 27 11:08 .mozilla/
+drwx------  4 master09 master09 4096 Jul  5 13:15 .pgadmin/
+drwx------  3 master09 master09 4096 Jun 24 18:43 .pki/
+-rw-r--r--  1 master09 master09  807 Feb 25  2020 .profile
+drwxrwxr-x  5 master09 master09 4096 Jul  4 10:00 reza/
+drwx------  3 master09 master09 4096 Jun 24 18:46 snap/
+-rw-r--r--  1 master09 master09    0 Feb 15 16:12 .sudo_as_admin_successful
+drwxrwxr-x  2 master09 master09 4096 Jun 30 20:09 .swt/
+-rw-------  1 master09 master09  795 Jun 24 14:12 .viminfo
+drwx------  2 master09 master09 4096 Jul  4 11:21 .vnc/
+-rw-------  1 master09 master09  270 Jul  4 11:21 .Xauthority
+-rw-------  1 master09 master09 4664 Jun 24 14:12 .xsession-errors
+root@SUJOGBASTION:/home/master09# cd ../..
+root@SUJOGBASTION:/# ll
+total 6336
+drwxr-xr-x  20 root root    4096 Jun  6 14:31 ./
+drwxr-xr-x  20 root root    4096 Jun  6 14:31 ../
+lrwxrwxrwx   1 root root       7 Dec 23  2020 bin -> usr/bin/
+drwxr-xr-x   4 root root    4096 May  6  2021 boot/
+drwxrwxr-x   2 root root    4096 Dec 23  2020 cdrom/
+drwxr-xr-x  19 root root    4420 Jun 18 18:31 dev/
+-rw-r--r--   1 root root 6393077 Dec  8  2021 Documents
+drwxr-xr-x 146 root root   12288 Jul  1 17:20 etc/
+drwxr-xr-x  12 root root    4096 Feb 15 16:19 home/
+lrwxrwxrwx   1 root root       7 Dec 23  2020 lib -> usr/lib/
+lrwxrwxrwx   1 root root       9 Dec 23  2020 lib32 -> usr/lib32/
+lrwxrwxrwx   1 root root       9 Dec 23  2020 lib64 -> usr/lib64/
+lrwxrwxrwx   1 root root      10 Dec 23  2020 libx32 -> usr/libx32/
+drwx------   2 root root   16384 Dec 23  2020 lost+found/
+drwxr-xr-x   2 root root    4096 Jul 31  2020 media/
+drwxr-xr-x   2 root root    4096 Jul 31  2020 mnt/
+drwxr-xr-x   3 root root    4096 Jan 12  2021 opt/
+dr-xr-xr-x 707 root root       0 Jun 18 18:31 proc/
+drwx------  15 root root    4096 Jul  5 12:17 root/
+drwxr-xr-x  41 root root    1140 Jul  5 11:15 run/
+lrwxrwxrwx   1 root root       8 Dec 23  2020 sbin -> usr/sbin/
+drwxr-xr-x  12 root root    4096 Jun 30 20:01 snap/
+drwxr-xr-x   2 root root    4096 Jul 31  2020 srv/
+dr-xr-xr-x  13 root root       0 Jun 18 18:31 sys/
+drwxrwxrwt  92 root root   12288 Jul  5 13:11 tmp/
+drwxr-xr-x  15 root root    4096 May  6  2021 usr/
+drwxr-xr-x  15 root root    4096 Jan 12  2021 var/
+root@SUJOGBASTION:/# cd home/
+root@SUJOGBASTION:/home# ll
+total 52
+drwxr-xr-x 12 root       root       4096 Feb 15 16:19 ./
+drwxr-xr-x 20 root       root       4096 Jun  6 14:31 ../
+-rw-r--r--  1 root       root       3019 Dec  7  2021 config
+drwxr-xr-x 28 master     master     4096 Jul  5 10:44 master/
+drwxr-xr-x 26 master02   master02   4096 Jul  4 11:03 master02/
+drwxr-xr-x 22 master03   master03   4096 Jul  5 11:17 master03/
+drwxr-xr-x 11 master04   master04   4096 Jul  4 11:01 master04/
+drwxr-xr-x 15 master05   master05   4096 Jul  4 11:08 master05/
+drwxr-xr-x 19 master06   master06   4096 Jul  4 11:03 master06/
+drwxr-xr-x  8 master07   master07   4096 Jul  4 11:04 master07/
+drwxr-xr-x  8 master08   master08   4096 Jul  4 11:04 master08/
+drwxr-xr-x 19 master09   master09   4096 Jul  4 11:50 master09/
+drwxr-xr-x  2 tapojitvnc tapojitvnc 4096 Aug  9  2021 tapojitvnc/
+root@SUJOGBASTION:/home# kubectl logs noc-services-665b4cf448-f5zs4 -n egov -f 
+Listening for transport dt_socket at address: 5005
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.22.RELEASE)
+
+2022-07-05 08:05:43.358+0000  INFO --- [      main] org.egov.noc.NOCApplication              --  : Starting NOCApplication v1.0.1-SNAPSHOT on noc-services-665b4cf448-f5zs4 with PID 7 (/opt/egov/noc-services.jar started by root in /) 
+2022-07-05 08:05:43.362+0000  INFO --- [      main] org.egov.noc.NOCApplication              --  : The following profiles are active: monitoring 
+2022-07-05 08:05:43.434+0000  INFO --- [      main] ationConfigEmbeddedWebApplicationContext --  : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4facf68f: startup date [Tue Jul 05 08:05:43 GMT 2022]; root of context hierarchy 
+2022-07-05 08:05:45.166+0000  INFO --- [      main] trationDelegate$BeanPostProcessorChecker --  : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$c46772fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2022-07-05 08:05:45.252+0000  INFO --- [      main] trationDelegate$BeanPostProcessorChecker --  : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f0b5617a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2022-07-05 08:05:46.090+0000  INFO --- [      main] s.b.c.e.t.TomcatEmbeddedServletContainer --  : Tomcat initialized with port(s): 8080 (http) 
+2022-07-05 08:05:46.143+0000  INFO --- [      main] o.a.c.core.StandardService               --  : Starting service [Tomcat] 
+2022-07-05 08:05:46.144+0000  INFO --- [      main] o.a.c.core.StandardEngine                --  : Starting Servlet Engine: Apache Tomcat/8.5.43 
+2022-07-05 08:05:46.262+0000  INFO --- [tartStop-1] o.a.c.c.C.[.[.[/noc-services]            --  : Initializing Spring embedded WebApplicationContext 
+2022-07-05 08:05:46.262+0000  INFO --- [tartStop-1] o.s.web.context.ContextLoader            --  : Root WebApplicationContext: initialization completed in 2832 ms 
+2022-07-05 08:05:46.674+0000  INFO --- [tartStop-1] o.c.s.w.s.ServerTracingAutoConfiguration --  : Creating FilterRegistrationBean bean with TracingFilter mapped to [/*], skip pattern is "/api-docs.*|/autoconfig|/configprops|/dump|/health|/info|/metrics.*|/mappings|/swagger.*|.*.png|.*.css|.*.js|.*.html|/favicon.ico|/hystrix.stream|/prometheus|/manage/*" 
+2022-07-05 08:05:47.402+0000  INFO --- [tartStop-1] o.c.s.w.s.ServerTracingAutoConfiguration --  : Creating WebMvcConfigurerAdapter bean with class io.opentracing.contrib.spring.web.interceptor.TracingHandlerInterceptor 
+2022-07-05 08:05:47.530+0000  INFO --- [tartStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping --  : Mapped "{[/v1/noc/thirdPartyData/{dataType}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<org.egov.noc.thirdparty.fire.model.FetchMastersResponse> org.egov.noc.web.controller.NOCController.getThirdPartyData(java.lang.String) 
+2022-07-05 08:05:47.531+0000  INFO --- [tartStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping --  : Mapped "{[/v1/noc/_thirdparty],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.String> org.egov.noc.web.controller.NOCController.thirdPartyNoc(org.egov.noc.web.model.RequestInfoWrapper) 
+2022-07-05 08:05:47.532+0000  INFO --- [tartStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping --  : Mapped "{[/v1/noc/thirdparty/_update],methods=[POST]}" onto public org.springframework.http.ResponseEntity<org.egov.noc.web.model.NocResponse> org.egov.noc.web.controller.NOCController.thirdpartyUpdate(org.egov.noc.web.model.ThirdPartyNocRequest) 
+2022-07-05 08:05:47.532+0000  INFO --- [tartStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping --  : Mapped "{[/v1/noc/_update],methods=[POST]}" onto public org.springframework.http.ResponseEntity<org.egov.noc.web.model.NocResponse> org.egov.noc.web.controller.NOCController.update(org.egov.noc.web.model.NocRequest) 
+2022-07-05 08:05:47.532+0000  INFO --- [tartStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping --  : Mapped "{[/v1/noc/_create],methods=[POST]}" onto public org.springframework.http.ResponseEntity<org.egov.noc.web.model.NocResponse> org.egov.noc.web.controller.NOCController.create(org.egov.noc.web.model.NocRequest) throws com.fasterxml.jackson.core.JsonProcessingException 
+2022-07-05 08:05:47.533+0000  INFO --- [tartStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping --  : Mapped "{[/v1/noc/_search],methods=[POST]}" onto public org.springframework.http.ResponseEntity<org.egov.noc.web.model.NocResponse> org.egov.noc.web.controller.NOCController.search(org.egov.noc.web.model.RequestInfoWrapper,org.egov.noc.web.model.NocSearchCriteria) 
+2022-07-05 08:05:47.535+0000  INFO --- [tartStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping --  : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2022-07-05 08:05:47.535+0000  INFO --- [tartStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping --  : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2022-07-05 08:05:47.632+0000  INFO --- [tartStop-1] o.s.w.s.h.SimpleUrlHandlerMapping        --  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2022-07-05 08:05:47.632+0000  INFO --- [tartStop-1] o.s.w.s.h.SimpleUrlHandlerMapping        --  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2022-07-05 08:05:47.682+0000  INFO --- [tartStop-1] o.s.w.s.h.SimpleUrlHandlerMapping        --  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2022-07-05 08:05:48.784+0000  INFO --- [tartStop-1] o.s.b.a.e.m.EndpointHandlerMapping       --  : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal) 
+2022-07-05 08:05:48.787+0000  INFO --- [tartStop-1] o.s.b.a.e.m.EndpointHandlerMapping       --  : Mapped "{[/prometheus || /prometheus.json],methods=[GET]}" onto public java.lang.Object io.micrometer.spring.autoconfigure.export.prometheus.PrometheusScrapeMvcEndpoint.invoke() 
+2022-07-05 08:05:48.936+0000  INFO --- [tartStop-1] o.s.b.w.s.FilterRegistrationBean         --  : Mapping filter: 'webMetricsFilter' to: [/*] 
+2022-07-05 08:05:48.937+0000  INFO --- [tartStop-1] o.s.b.w.s.FilterRegistrationBean         --  : Mapping filter: 'metricsFilter' to: [/*] 
+2022-07-05 08:05:48.937+0000  INFO --- [tartStop-1] o.s.b.w.s.FilterRegistrationBean         --  : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2022-07-05 08:05:48.937+0000  INFO --- [tartStop-1] o.s.b.w.s.FilterRegistrationBean         --  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2022-07-05 08:05:48.937+0000  INFO --- [tartStop-1] o.s.b.w.s.FilterRegistrationBean         --  : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2022-07-05 08:05:48.937+0000  INFO --- [tartStop-1] o.s.b.w.s.FilterRegistrationBean         --  : Mapping filter: 'requestContextFilter' to: [/*] 
+2022-07-05 08:05:48.937+0000  INFO --- [tartStop-1] o.s.b.w.s.FilterRegistrationBean         --  : Mapping filter: 'TracerFilter' to urls: [/*] 
+2022-07-05 08:05:48.937+0000  INFO --- [tartStop-1] o.s.b.w.s.FilterRegistrationBean         --  : Mapping filter: 'tracingFilter' to urls: [/*] 
+2022-07-05 08:05:48.937+0000  INFO --- [tartStop-1] o.s.b.w.s.FilterRegistrationBean         --  : Mapping filter: 'webRequestLoggingFilter' to: [/*] 
+2022-07-05 08:05:48.938+0000  INFO --- [tartStop-1] o.s.b.w.s.FilterRegistrationBean         --  : Mapping filter: 'applicationContextIdFilter' to: [/*] 
+2022-07-05 08:05:48.938+0000  INFO --- [tartStop-1] o.s.b.w.s.ServletRegistrationBean        --  : Mapping servlet: 'dispatcherServlet' to [/] 
+2022-07-05 08:05:49.843+0000  INFO --- [      main] s.w.s.m.m.a.RequestMappingHandlerAdapter --  : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4facf68f: startup date [Tue Jul 05 13:35:43 IST 2022]; root of context hierarchy 
+2022-07-05 08:05:49.925+0000  INFO --- [      main] .m.m.a.ExceptionHandlerExceptionResolver --  : Detected @ExceptionHandler methods in exceptionAdvise 
+2022-07-05 08:05:50.788+0000  INFO --- [      main] o.s.j.e.a.AnnotationMBeanExporter        --  : Registering beans for JMX exposure on startup 
+2022-07-05 08:05:50.826+0000  INFO --- [      main] o.s.c.s.DefaultLifecycleProcessor        --  : Starting beans in phase 0 
+2022-07-05 08:05:50.908+0000  INFO --- [      main] o.a.k.c.c.ConsumerConfig                 --  : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-v2.kafka-cluster:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = egov-noc-services
+	heartbeat.interval.ms = 3000
+	interceptor.classes = [org.egov.tracer.kafka.KafkaTemplateLoggingInterceptors]
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.egov.tracer.kafka.deserializer.HashMapDeserializer
+ 
+2022-07-05 08:05:51.026+0000  INFO --- [      main] o.a.k.c.utils.AppInfoParser              --  : Kafka version : 1.1.1 
+2022-07-05 08:05:51.026+0000  INFO --- [      main] o.a.k.c.utils.AppInfoParser              --  : Kafka commitId : 98b6346a977495f6 
+2022-07-05 08:05:51.101+0000  INFO --- [      main] s.b.c.e.t.TomcatEmbeddedServletContainer --  : Tomcat started on port(s): 8080 (http) 
+2022-07-05 08:05:51.109+0000  INFO --- [      main] org.egov.noc.NOCApplication              --  : Started NOCApplication in 8.476 seconds (JVM running for 9.203) 
+2022-07-05 08:05:51.267+0000  INFO --- [er#0-0-C-1] o.a.kafka.clients.Metadata               --  : Cluster ID: IaUfAkv8SXKpc-Mi1EJxuw 
+2022-07-05 08:05:51.272+0000  INFO --- [er#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator          --  : [Consumer clientId=consumer-1, groupId=egov-noc-services] Discovered group coordinator kafka-v2-2.kafka-v2-headless.kafka-cluster:9092 (id: 2147483645 rack: null) 
+2022-07-05 08:05:51.279+0000  INFO --- [er#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          --  : [Consumer clientId=consumer-1, groupId=egov-noc-services] Revoking previously assigned partitions [] 
+2022-07-05 08:05:51.279+0000  INFO --- [er#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    --  : partitions revoked:[] 
+2022-07-05 08:05:51.280+0000  INFO --- [er#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator          --  : [Consumer clientId=consumer-1, groupId=egov-noc-services] (Re-)joining group 
+2022-07-05 08:05:52.691+0000  INFO --- [er#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator          --  : [Consumer clientId=consumer-1, groupId=egov-noc-services] Successfully joined group with generation 849 
+2022-07-05 08:05:52.695+0000  INFO --- [er#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          --  : [Consumer clientId=consumer-1, groupId=egov-noc-services] Setting newly assigned partitions [save-noc-application-2, update-noc-workflow-2, update-noc-application-2] 
+2022-07-05 08:05:52.700+0000  INFO --- [er#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    --  : partitions assigned:[save-noc-application-2, update-noc-workflow-2, update-noc-application-2] 
+2022-07-05 08:07:15.749+0000  INFO --- [080-exec-1] o.a.c.c.C.[.[.[/noc-services]            --  : Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2022-07-05 08:07:15.749+0000  INFO --- [080-exec-1] o.s.w.s.DispatcherServlet                --  : FrameworkServlet 'dispatcherServlet': initialization started 
+2022-07-05 08:07:15.776+0000  INFO --- [080-exec-1] o.s.w.s.DispatcherServlet                --  : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms 
+2022-07-05 08:07:15.841+0000  WARN --- [080-exec-1] o.a.t.jdbc.pool.ConnectionPool           --  : initialSize is larger than maxActive, setting initialSize to: 3 
+2022-07-05 08:07:56.289+0000  INFO --- [080-exec-3] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=e68a90a6-4846-4799-aec6-e4ebf615a33d : Received request URI: http://noc-services:8080/noc-services/v1/noc/thirdPartyData/getFiredistricts  
+2022-07-05 08:07:56.318+0000  INFO --- [080-exec-3] o.egov.noc.service.NOCService            -- CORRELATION_ID=e68a90a6-4846-4799-aec6-e4ebf615a33d : dataType inside method getThirdPartyData:getFiredistricts 
+2022-07-05 08:07:56.319+0000  INFO --- [080-exec-3] o.egov.noc.service.NOCService            -- CORRELATION_ID=e68a90a6-4846-4799-aec6-e4ebf615a33d : url for fetching thirdparty data:https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFiredistricts/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes 
+2022-07-05 08:07:56.365+0000  INFO --- [080-exec-3] o.e.t.h.RestTemplateLoggingInterceptor   -- CORRELATION_ID=e68a90a6-4846-4799-aec6-e4ebf615a33d : Sending request to https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFiredistricts/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes with verb POST 
+2022-07-05 08:07:56.786+0000  INFO --- [080-exec-4] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=23272d4a-307e-4554-9696-bbd9c42d0f5b : Received request URI: http://noc-services:8080/noc-services/v1/noc/_search  
+2022-07-05 08:07:56.898+0000  INFO --- [080-exec-4] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=23272d4a-307e-4554-9696-bbd9c42d0f5b : od.rourkela 
+2022-07-05 08:07:56.898+0000  INFO --- [080-exec-4] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=23272d4a-307e-4554-9696-bbd9c42d0f5b : BP-RRK-2022-05-18-003695 
+2022-07-05 08:07:56.898+0000  INFO --- [080-exec-4] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=23272d4a-307e-4554-9696-bbd9c42d0f5b : org.egov.noc.web.model.NocSearchCriteria@204a4d4f 
+2022-07-05 08:07:56.898+0000  INFO --- [080-exec-4] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=23272d4a-307e-4554-9696-bbd9c42d0f5b : Final Query 
+2022-07-05 08:07:56.898+0000  INFO --- [080-exec-4] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=23272d4a-307e-4554-9696-bbd9c42d0f5b : SELECT noc.*,nocdoc.*,noc.id as noc_id,noc.tenantid as noc_tenantId,noc.lastModifiedTime as noc_lastModifiedTime,noc.createdBy as noc_createdBy,noc.lastModifiedBy as noc_lastModifiedBy,noc.createdTime as noc_createdTime,noc.additionalDetails,noc.landId as noc_landId, nocdoc.id as noc_doc_id, nocdoc.additionalDetails as doc_details, nocdoc.documenttype as noc_doc_documenttype,nocdoc.filestoreid as noc_doc_filestore FROM eg_noc noc  LEFT OUTER JOIN eg_noc_document nocdoc ON nocdoc.nocid = noc.id WHERE 1=1  AND noc.tenantid=?  AND noc.sourceRefId = ? 
+2022-07-05 08:07:56.899+0000  INFO --- [080-exec-4] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=23272d4a-307e-4554-9696-bbd9c42d0f5b : SELECT * FROM (SELECT *, DENSE_RANK() OVER (ORDER BY noc_lastModifiedTime DESC) offset_ FROM (SELECT noc.*,nocdoc.*,noc.id as noc_id,noc.tenantid as noc_tenantId,noc.lastModifiedTime as noc_lastModifiedTime,noc.createdBy as noc_createdBy,noc.lastModifiedBy as noc_lastModifiedBy,noc.createdTime as noc_createdTime,noc.additionalDetails,noc.landId as noc_landId, nocdoc.id as noc_doc_id, nocdoc.additionalDetails as doc_details, nocdoc.documenttype as noc_doc_documenttype,nocdoc.filestoreid as noc_doc_filestore FROM eg_noc noc  LEFT OUTER JOIN eg_noc_document nocdoc ON nocdoc.nocid = noc.id WHERE 1=1  AND noc.tenantid=?  AND noc.sourceRefId = ?) result) result_offset WHERE offset_ > ? AND offset_ <= ? 
+2022-07-05 08:07:56.953+0000  INFO --- [080-exec-4] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=23272d4a-307e-4554-9696-bbd9c42d0f5b : Response code sent: 200 
+2022-07-05 08:08:12.517+0000  INFO --- [080-exec-5] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=37cee353-c902-490f-8ba4-1d018f096124 : Received request URI: http://noc-services:8080/noc-services/v1/noc/thirdPartyData/getBuildingtypes  
+2022-07-05 08:08:12.521+0000  INFO --- [080-exec-5] o.egov.noc.service.NOCService            -- CORRELATION_ID=37cee353-c902-490f-8ba4-1d018f096124 : dataType inside method getThirdPartyData:getBuildingtypes 
+2022-07-05 08:08:12.522+0000  INFO --- [080-exec-5] o.egov.noc.service.NOCService            -- CORRELATION_ID=37cee353-c902-490f-8ba4-1d018f096124 : url for fetching thirdparty data:https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getBuildingtypes 
+2022-07-05 08:08:12.523+0000  INFO --- [080-exec-5] o.e.t.h.RestTemplateLoggingInterceptor   -- CORRELATION_ID=37cee353-c902-490f-8ba4-1d018f096124 : Sending request to https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getBuildingtypes with verb POST 
+2022-07-05 08:08:12.529+0000  INFO --- [080-exec-7] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=fe63cddf-ac86-4b96-a794-6b5570a76d06 : Received request URI: http://noc-services:8080/noc-services/v1/noc/thirdPartyData/getFiredistricts  
+2022-07-05 08:08:12.533+0000  INFO --- [080-exec-7] o.egov.noc.service.NOCService            -- CORRELATION_ID=fe63cddf-ac86-4b96-a794-6b5570a76d06 : dataType inside method getThirdPartyData:getFiredistricts 
+2022-07-05 08:08:12.533+0000  INFO --- [080-exec-7] o.egov.noc.service.NOCService            -- CORRELATION_ID=fe63cddf-ac86-4b96-a794-6b5570a76d06 : url for fetching thirdparty data:https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFiredistricts/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes 
+2022-07-05 08:08:12.534+0000  INFO --- [080-exec-7] o.e.t.h.RestTemplateLoggingInterceptor   -- CORRELATION_ID=fe63cddf-ac86-4b96-a794-6b5570a76d06 : Sending request to https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFiredistricts/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes with verb POST 
+2022-07-05 08:08:12.620+0000  INFO --- [080-exec-8] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=fdf51b36-d211-448b-8f9d-c7bdacfcff61 : Received request URI: http://noc-services:8080/noc-services/v1/noc/_search  
+2022-07-05 08:08:12.625+0000  INFO --- [080-exec-8] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=fdf51b36-d211-448b-8f9d-c7bdacfcff61 : od.cuttack 
+2022-07-05 08:08:12.626+0000  INFO --- [080-exec-8] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=fdf51b36-d211-448b-8f9d-c7bdacfcff61 : BP-CTC-2022-06-23-005042 
+2022-07-05 08:08:12.626+0000  INFO --- [080-exec-8] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=fdf51b36-d211-448b-8f9d-c7bdacfcff61 : org.egov.noc.web.model.NocSearchCriteria@31225d68 
+2022-07-05 08:08:12.626+0000  INFO --- [080-exec-8] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=fdf51b36-d211-448b-8f9d-c7bdacfcff61 : Final Query 
+2022-07-05 08:08:12.626+0000  INFO --- [080-exec-8] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=fdf51b36-d211-448b-8f9d-c7bdacfcff61 : SELECT noc.*,nocdoc.*,noc.id as noc_id,noc.tenantid as noc_tenantId,noc.lastModifiedTime as noc_lastModifiedTime,noc.createdBy as noc_createdBy,noc.lastModifiedBy as noc_lastModifiedBy,noc.createdTime as noc_createdTime,noc.additionalDetails,noc.landId as noc_landId, nocdoc.id as noc_doc_id, nocdoc.additionalDetails as doc_details, nocdoc.documenttype as noc_doc_documenttype,nocdoc.filestoreid as noc_doc_filestore FROM eg_noc noc  LEFT OUTER JOIN eg_noc_document nocdoc ON nocdoc.nocid = noc.id WHERE 1=1  AND noc.tenantid=?  AND noc.sourceRefId = ? 
+2022-07-05 08:08:12.626+0000  INFO --- [080-exec-8] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=fdf51b36-d211-448b-8f9d-c7bdacfcff61 : SELECT * FROM (SELECT *, DENSE_RANK() OVER (ORDER BY noc_lastModifiedTime DESC) offset_ FROM (SELECT noc.*,nocdoc.*,noc.id as noc_id,noc.tenantid as noc_tenantId,noc.lastModifiedTime as noc_lastModifiedTime,noc.createdBy as noc_createdBy,noc.lastModifiedBy as noc_lastModifiedBy,noc.createdTime as noc_createdTime,noc.additionalDetails,noc.landId as noc_landId, nocdoc.id as noc_doc_id, nocdoc.additionalDetails as doc_details, nocdoc.documenttype as noc_doc_documenttype,nocdoc.filestoreid as noc_doc_filestore FROM eg_noc noc  LEFT OUTER JOIN eg_noc_document nocdoc ON nocdoc.nocid = noc.id WHERE 1=1  AND noc.tenantid=?  AND noc.sourceRefId = ?) result) result_offset WHERE offset_ > ? AND offset_ <= ? 
+2022-07-05 08:08:12.635+0000  INFO --- [080-exec-8] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=fdf51b36-d211-448b-8f9d-c7bdacfcff61 : Response code sent: 200 
+2022-07-05 08:09:34.901+0000  INFO --- [080-exec-6] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=7fd8a361-8f73-4186-873c-7ed8f781bb2f : Received request URI: http://noc-services:8080/noc-services/v1/noc/thirdPartyData/getBuildingtypes  
+2022-07-05 08:09:34.903+0000  INFO --- [080-exec-8] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=1a286116-bba8-46e5-884a-6efccdb681ee : Received request URI: http://noc-services:8080/noc-services/v1/noc/thirdPartyData/getFiredistricts  
+2022-07-05 08:09:34.903+0000  INFO --- [080-exec-6] o.egov.noc.service.NOCService            -- CORRELATION_ID=7fd8a361-8f73-4186-873c-7ed8f781bb2f : dataType inside method getThirdPartyData:getBuildingtypes 
+2022-07-05 08:09:34.904+0000  INFO --- [080-exec-6] o.egov.noc.service.NOCService            -- CORRELATION_ID=7fd8a361-8f73-4186-873c-7ed8f781bb2f : url for fetching thirdparty data:https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getBuildingtypes 
+2022-07-05 08:09:34.905+0000  INFO --- [080-exec-6] o.e.t.h.RestTemplateLoggingInterceptor   -- CORRELATION_ID=7fd8a361-8f73-4186-873c-7ed8f781bb2f : Sending request to https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getBuildingtypes with verb POST 
+2022-07-05 08:09:34.906+0000  INFO --- [080-exec-8] o.egov.noc.service.NOCService            -- CORRELATION_ID=1a286116-bba8-46e5-884a-6efccdb681ee : dataType inside method getThirdPartyData:getFiredistricts 
+2022-07-05 08:09:34.906+0000  INFO --- [080-exec-8] o.egov.noc.service.NOCService            -- CORRELATION_ID=1a286116-bba8-46e5-884a-6efccdb681ee : url for fetching thirdparty data:https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFiredistricts/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes 
+2022-07-05 08:09:34.907+0000  INFO --- [080-exec-8] o.e.t.h.RestTemplateLoggingInterceptor   -- CORRELATION_ID=1a286116-bba8-46e5-884a-6efccdb681ee : Sending request to https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFiredistricts/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes with verb POST 
+2022-07-05 08:09:34.907+0000  INFO --- [080-exec-9] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=14a9027b-fe71-43b9-b45c-b22215b57cd3 : Received request URI: http://noc-services:8080/noc-services/v1/noc/thirdPartyData/getFireStations  
+2022-07-05 08:09:34.910+0000  INFO --- [080-exec-9] o.egov.noc.service.NOCService            -- CORRELATION_ID=14a9027b-fe71-43b9-b45c-b22215b57cd3 : dataType inside method getThirdPartyData:getFireStations 
+2022-07-05 08:09:34.910+0000  INFO --- [080-exec-9] o.egov.noc.service.NOCService            -- CORRELATION_ID=14a9027b-fe71-43b9-b45c-b22215b57cd3 : url for fetching thirdparty data:https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes 
+2022-07-05 08:09:34.911+0000  INFO --- [080-exec-9] o.e.t.h.RestTemplateLoggingInterceptor   -- CORRELATION_ID=14a9027b-fe71-43b9-b45c-b22215b57cd3 : Sending request to https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes with verb POST 
+2022-07-05 08:09:35.430+0000  INFO --- [80-exec-10] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=b9619eaf-77b5-4298-908b-1d70506c5443 : Received request URI: http://noc-services:8080/noc-services/v1/noc/_search  
+2022-07-05 08:09:35.436+0000  INFO --- [80-exec-10] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=b9619eaf-77b5-4298-908b-1d70506c5443 : od.rourkela 
+2022-07-05 08:09:35.436+0000  INFO --- [80-exec-10] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=b9619eaf-77b5-4298-908b-1d70506c5443 : BP-RRK-2021-11-12-000150 
+2022-07-05 08:09:35.436+0000  INFO --- [80-exec-10] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=b9619eaf-77b5-4298-908b-1d70506c5443 : org.egov.noc.web.model.NocSearchCriteria@6b586a88 
+2022-07-05 08:09:35.436+0000  INFO --- [80-exec-10] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=b9619eaf-77b5-4298-908b-1d70506c5443 : Final Query 
+2022-07-05 08:09:35.436+0000  INFO --- [80-exec-10] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=b9619eaf-77b5-4298-908b-1d70506c5443 : SELECT noc.*,nocdoc.*,noc.id as noc_id,noc.tenantid as noc_tenantId,noc.lastModifiedTime as noc_lastModifiedTime,noc.createdBy as noc_createdBy,noc.lastModifiedBy as noc_lastModifiedBy,noc.createdTime as noc_createdTime,noc.additionalDetails,noc.landId as noc_landId, nocdoc.id as noc_doc_id, nocdoc.additionalDetails as doc_details, nocdoc.documenttype as noc_doc_documenttype,nocdoc.filestoreid as noc_doc_filestore FROM eg_noc noc  LEFT OUTER JOIN eg_noc_document nocdoc ON nocdoc.nocid = noc.id WHERE 1=1  AND noc.tenantid=?  AND noc.sourceRefId = ? 
+2022-07-05 08:09:35.436+0000  INFO --- [80-exec-10] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=b9619eaf-77b5-4298-908b-1d70506c5443 : SELECT * FROM (SELECT *, DENSE_RANK() OVER (ORDER BY noc_lastModifiedTime DESC) offset_ FROM (SELECT noc.*,nocdoc.*,noc.id as noc_id,noc.tenantid as noc_tenantId,noc.lastModifiedTime as noc_lastModifiedTime,noc.createdBy as noc_createdBy,noc.lastModifiedBy as noc_lastModifiedBy,noc.createdTime as noc_createdTime,noc.additionalDetails,noc.landId as noc_landId, nocdoc.id as noc_doc_id, nocdoc.additionalDetails as doc_details, nocdoc.documenttype as noc_doc_documenttype,nocdoc.filestoreid as noc_doc_filestore FROM eg_noc noc  LEFT OUTER JOIN eg_noc_document nocdoc ON nocdoc.nocid = noc.id WHERE 1=1  AND noc.tenantid=?  AND noc.sourceRefId = ?) result) result_offset WHERE offset_ > ? AND offset_ <= ? 
+2022-07-05 08:09:35.444+0000  INFO --- [80-exec-10] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=b9619eaf-77b5-4298-908b-1d70506c5443 : Response code sent: 200 
+2022-07-05 08:09:41.491+0000  INFO --- [080-exec-1] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=2fff4b19-f96a-4153-a6e8-a10e45b35c3d : Received request URI: http://noc-services:8080/noc-services/v1/noc/_search  
+2022-07-05 08:09:41.494+0000  INFO --- [080-exec-1] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=2fff4b19-f96a-4153-a6e8-a10e45b35c3d : od.bhubaneswardevelopmentauthority 
+2022-07-05 08:09:41.495+0000  INFO --- [080-exec-1] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=2fff4b19-f96a-4153-a6e8-a10e45b35c3d : BP-BDA-2022-02-24-001125 
+2022-07-05 08:09:41.495+0000  INFO --- [080-exec-1] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=2fff4b19-f96a-4153-a6e8-a10e45b35c3d : org.egov.noc.web.model.NocSearchCriteria@512dc996 
+2022-07-05 08:09:41.495+0000  INFO --- [080-exec-1] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=2fff4b19-f96a-4153-a6e8-a10e45b35c3d : Final Query 
+2022-07-05 08:09:41.495+0000  INFO --- [080-exec-1] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=2fff4b19-f96a-4153-a6e8-a10e45b35c3d : SELECT noc.*,nocdoc.*,noc.id as noc_id,noc.tenantid as noc_tenantId,noc.lastModifiedTime as noc_lastModifiedTime,noc.createdBy as noc_createdBy,noc.lastModifiedBy as noc_lastModifiedBy,noc.createdTime as noc_createdTime,noc.additionalDetails,noc.landId as noc_landId, nocdoc.id as noc_doc_id, nocdoc.additionalDetails as doc_details, nocdoc.documenttype as noc_doc_documenttype,nocdoc.filestoreid as noc_doc_filestore FROM eg_noc noc  LEFT OUTER JOIN eg_noc_document nocdoc ON nocdoc.nocid = noc.id WHERE 1=1  AND noc.tenantid=?  AND noc.sourceRefId = ? 
+2022-07-05 08:09:41.495+0000  INFO --- [080-exec-1] o.e.n.r.b.NocQueryBuilder                -- CORRELATION_ID=2fff4b19-f96a-4153-a6e8-a10e45b35c3d : SELECT * FROM (SELECT *, DENSE_RANK() OVER (ORDER BY noc_lastModifiedTime DESC) offset_ FROM (SELECT noc.*,nocdoc.*,noc.id as noc_id,noc.tenantid as noc_tenantId,noc.lastModifiedTime as noc_lastModifiedTime,noc.createdBy as noc_createdBy,noc.lastModifiedBy as noc_lastModifiedBy,noc.createdTime as noc_createdTime,noc.additionalDetails,noc.landId as noc_landId, nocdoc.id as noc_doc_id, nocdoc.additionalDetails as doc_details, nocdoc.documenttype as noc_doc_documenttype,nocdoc.filestoreid as noc_doc_filestore FROM eg_noc noc  LEFT OUTER JOIN eg_noc_document nocdoc ON nocdoc.nocid = noc.id WHERE 1=1  AND noc.tenantid=?  AND noc.sourceRefId = ?) result) result_offset WHERE offset_ > ? AND offset_ <= ? 
+2022-07-05 08:09:41.501+0000  INFO --- [080-exec-1] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=2fff4b19-f96a-4153-a6e8-a10e45b35c3d : Response code sent: 200 
+2022-07-05 08:09:41.642+0000  INFO --- [080-exec-2] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=c6e7312f-0edb-41d9-a3b2-19b18434236c : Received request URI: http://noc-services:8080/noc-services/v1/noc/thirdPartyData/getBuildingtypes  
+2022-07-05 08:09:41.644+0000  INFO --- [080-exec-2] o.egov.noc.service.NOCService            -- CORRELATION_ID=c6e7312f-0edb-41d9-a3b2-19b18434236c : dataType inside method getThirdPartyData:getBuildingtypes 
+2022-07-05 08:09:41.644+0000  INFO --- [080-exec-2] o.egov.noc.service.NOCService            -- CORRELATION_ID=c6e7312f-0edb-41d9-a3b2-19b18434236c : url for fetching thirdparty data:https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getBuildingtypes 
+2022-07-05 08:09:41.645+0000  INFO --- [080-exec-2] o.e.t.h.RestTemplateLoggingInterceptor   -- CORRELATION_ID=c6e7312f-0edb-41d9-a3b2-19b18434236c : Sending request to https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getBuildingtypes with verb POST 
+2022-07-05 08:09:41.652+0000  INFO --- [080-exec-4] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=346055ec-08c4-468e-a422-83ee92d04115 : Received request URI: http://noc-services:8080/noc-services/v1/noc/thirdPartyData/getFireStations  
+2022-07-05 08:09:41.654+0000  INFO --- [080-exec-4] o.egov.noc.service.NOCService            -- CORRELATION_ID=346055ec-08c4-468e-a422-83ee92d04115 : dataType inside method getThirdPartyData:getFireStations 
+2022-07-05 08:09:41.655+0000  INFO --- [080-exec-4] o.egov.noc.service.NOCService            -- CORRELATION_ID=346055ec-08c4-468e-a422-83ee92d04115 : url for fetching thirdparty data:https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes 
+2022-07-05 08:09:41.656+0000  INFO --- [080-exec-4] o.e.t.h.RestTemplateLoggingInterceptor   -- CORRELATION_ID=346055ec-08c4-468e-a422-83ee92d04115 : Sending request to https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes with verb POST 
+2022-07-05 08:10:06.852+0000  WARN --- [080-exec-3] o.e.t.h.RestTemplateLoggingInterceptor   -- CORRELATION_ID=e68a90a6-4846-4799-aec6-e4ebf615a33d : Received error response from https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFiredistricts/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes 
+
+java.net.ConnectException: Operation timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:153)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.http.client.BufferingClientHttpRequestWrapper.executeInternal(BufferingClientHttpRequestWrapper.java:56)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at io.opentracing.contrib.spring.web.client.TracingRestTemplateInterceptor.intercept(TracingRestTemplateInterceptor.java:74)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.egov.tracer.http.RestTemplateLoggingInterceptor.intercept(RestTemplateLoggingInterceptor.java:58)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:661)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:622)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:389)
+	at org.egov.noc.service.NOCService.getThirdPartyData(NOCService.java:231)
+	at org.egov.noc.web.controller.NOCController.getThirdPartyData(NOCController.java:153)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:854)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:765)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:54)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.opentracing.contrib.web.servlet.filter.TracingFilter.doFilter(TracingFilter.java:165)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.egov.tracer.http.filters.TracerFilter.doFilter(TracerFilter.java:89)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.micrometer.spring.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-07-05 08:10:06.854+0000 ERROR --- [080-exec-3] o.egov.noc.service.NOCService            -- CORRELATION_ID=e68a90a6-4846-4799-aec6-e4ebf615a33d : exception while calling third party API to fetch master data 
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFiredistricts/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes": Operation timed out (Connection timed out); nested exception is java.net.ConnectException: Operation timed out (Connection timed out)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:675)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:622)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:389)
+	at org.egov.noc.service.NOCService.getThirdPartyData(NOCService.java:231)
+	at org.egov.noc.web.controller.NOCController.getThirdPartyData(NOCController.java:153)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:854)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:765)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:54)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.opentracing.contrib.web.servlet.filter.TracingFilter.doFilter(TracingFilter.java:165)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.egov.tracer.http.filters.TracerFilter.doFilter(TracerFilter.java:89)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.micrometer.spring.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Operation timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:153)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.http.client.BufferingClientHttpRequestWrapper.executeInternal(BufferingClientHttpRequestWrapper.java:56)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at io.opentracing.contrib.spring.web.client.TracingRestTemplateInterceptor.intercept(TracingRestTemplateInterceptor.java:74)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.egov.tracer.http.RestTemplateLoggingInterceptor.intercept(RestTemplateLoggingInterceptor.java:58)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:661)
+	... 80 common frames omitted
+
+2022-07-05 08:10:06.858+0000 ERROR --- [080-exec-3] o.egov.tracer.ExceptionAdvise            -- CORRELATION_ID=e68a90a6-4846-4799-aec6-e4ebf615a33d : Exception caught in tracer  
+
+org.egov.tracer.model.CustomException: not able to fetch for dataType:getFiredistricts
+	at org.egov.noc.service.NOCService.getThirdPartyData(NOCService.java:235)
+	at org.egov.noc.web.controller.NOCController.getThirdPartyData(NOCController.java:153)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:854)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:765)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:54)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.opentracing.contrib.web.servlet.filter.TracingFilter.doFilter(TracingFilter.java:165)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.egov.tracer.http.filters.TracerFilter.doFilter(TracerFilter.java:89)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.micrometer.spring.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-07-05 08:10:06.865+0000  INFO --- [080-exec-3] o.e.t.h.filters.TracerFilter             -- CORRELATION_ID=e68a90a6-4846-4799-aec6-e4ebf615a33d : Response code sent: 400 
+2022-07-05 08:10:23.229+0000  WARN --- [080-exec-7] o.e.t.h.RestTemplateLoggingInterceptor   -- CORRELATION_ID=fe63cddf-ac86-4b96-a794-6b5570a76d06 : Received error response from https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFiredistricts/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes 
+
+java.net.ConnectException: Operation timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:153)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.http.client.BufferingClientHttpRequestWrapper.executeInternal(BufferingClientHttpRequestWrapper.java:56)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at io.opentracing.contrib.spring.web.client.TracingRestTemplateInterceptor.intercept(TracingRestTemplateInterceptor.java:74)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.egov.tracer.http.RestTemplateLoggingInterceptor.intercept(RestTemplateLoggingInterceptor.java:58)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:661)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:622)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:389)
+	at org.egov.noc.service.NOCService.getThirdPartyData(NOCService.java:231)
+	at org.egov.noc.web.controller.NOCController.getThirdPartyData(NOCController.java:153)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:854)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:765)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:54)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.opentracing.contrib.web.servlet.filter.TracingFilter.doFilter(TracingFilter.java:165)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.egov.tracer.http.filters.TracerFilter.doFilter(TracerFilter.java:89)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.micrometer.spring.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-07-05 08:10:23.229+0000  WARN --- [080-exec-5] o.e.t.h.RestTemplateLoggingInterceptor   -- CORRELATION_ID=37cee353-c902-490f-8ba4-1d018f096124 : Received error response from https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getBuildingtypes 
+
+java.net.ConnectException: Operation timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:153)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.http.client.BufferingClientHttpRequestWrapper.executeInternal(BufferingClientHttpRequestWrapper.java:56)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at io.opentracing.contrib.spring.web.client.TracingRestTemplateInterceptor.intercept(TracingRestTemplateInterceptor.java:74)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.egov.tracer.http.RestTemplateLoggingInterceptor.intercept(RestTemplateLoggingInterceptor.java:58)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:661)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:622)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:389)
+	at org.egov.noc.service.NOCService.getThirdPartyData(NOCService.java:231)
+	at org.egov.noc.web.controller.NOCController.getThirdPartyData(NOCController.java:153)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:854)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:765)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:54)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.opentracing.contrib.web.servlet.filter.TracingFilter.doFilter(TracingFilter.java:165)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.egov.tracer.http.filters.TracerFilter.doFilter(TracerFilter.java:89)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.micrometer.spring.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-07-05 08:10:23.231+0000 ERROR --- [080-exec-7] o.egov.noc.service.NOCService            -- CORRELATION_ID=fe63cddf-ac86-4b96-a794-6b5570a76d06 : exception while calling third party API to fetch master data 
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getFiredistricts/fire_safety/webservices/getFirestations/fire_safety/webservices/getBuildingtypes": Operation timed out (Connection timed out); nested exception is java.net.ConnectException: Operation timed out (Connection timed out)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:675)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:622)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:389)
+	at org.egov.noc.service.NOCService.getThirdPartyData(NOCService.java:231)
+	at org.egov.noc.web.controller.NOCController.getThirdPartyData(NOCController.java:153)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:854)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:765)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:54)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.opentracing.contrib.web.servlet.filter.TracingFilter.doFilter(TracingFilter.java:165)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.egov.tracer.http.filters.TracerFilter.doFilter(TracerFilter.java:89)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.micrometer.spring.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Operation timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:153)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.http.client.BufferingClientHttpRequestWrapper.executeInternal(BufferingClientHttpRequestWrapper.java:56)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at io.opentracing.contrib.spring.web.client.TracingRestTemplateInterceptor.intercept(TracingRestTemplateInterceptor.java:74)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.egov.tracer.http.RestTemplateLoggingInterceptor.intercept(RestTemplateLoggingInterceptor.java:58)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:661)
+	... 80 common frames omitted
+
+2022-07-05 08:10:23.232+0000 ERROR --- [080-exec-5] o.egov.noc.service.NOCService            -- CORRELATION_ID=37cee353-c902-490f-8ba4-1d018f096124 : exception while calling third party API to fetch master data 
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://www.agnishamaseva.odisha.gov.in/fire_safety/webservices/getBuildingtypes": Operation timed out (Connection timed out); nested exception is java.net.ConnectException: Operation timed out (Connection timed out)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:675)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:622)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:389)
+	at org.egov.noc.service.NOCService.getThirdPartyData(NOCService.java:231)
+	at org.egov.noc.web.controller.NOCController.getThirdPartyData(NOCController.java:153)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:854)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:765)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:54)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.opentracing.contrib.web.servlet.filter.TracingFilter.doFilter(TracingFilter.java:165)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.egov.tracer.http.filters.TracerFilter.doFilter(TracerFilter.java:89)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.micrometer.spring.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Operation timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:153)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.http.client.BufferingClientHttpRequestWrapper.executeInternal(BufferingClientHttpRequestWrapper.java:56)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at io.opentracing.contrib.spring.web.client.TracingRestTemplateInterceptor.intercept(TracingRestTemplateInterceptor.java:74)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.egov.tracer.http.RestTemplateLoggingInterceptor.intercept(RestTemplateLoggingInterceptor.java:58)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:661)
+	... 80 common frames omitted
+
+2022-07-05 08:10:23.234+0000 ERROR --- [080-exec-7] o.egov.tracer.ExceptionAdvise            -- CORRELATION_ID=fe63cddf-ac86-4b96-a794-6b5570a76d06 : Exception caught in tracer  
+
+org.egov.tracer.model.CustomException: not able to fetch for dataType:getFiredistricts
+	at org.egov.noc.service.NOCService.getThirdPartyData(NOCService.java:235)
+	at org.egov.noc.web.controller.NOCController.getThirdPartyData(NOCController.java:153)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:854)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:765)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:54)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.opentracing.contrib.web.servlet.filter.TracingFilter.doFilter(TracingFilter.java:165)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.egov.tracer.http.filters.TracerFilter.doFilter(TracerFilter.java:89)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.micrometer.spring.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-07-05 08:10:23.235+0000 ERROR --- [080-exec-5] o.egov.tracer.ExceptionAdvise            -- CORRELATION_ID=37cee353-c902-490f-8ba4-1d018f096124 : Exception caught in tracer  
+
+org.egov.tracer.model.CustomException: not able to fetch for dataType:getBuildingtypes
+	at org.egov.noc.service.NOCService.getThirdPartyData(NOCService.java:235)
+	at org.egov.noc.web.controller.NOCController.getThirdPartyData(NOCController.java:153)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:854)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:765)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:54)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.opentracing.contrib.web.servlet.filter.TracingFilter.doFilter(TracingFilter.java:165)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.egov.tracer.http.filters.TracerFilter.doFilter(TracerFilter.java:89)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at io.micrometer.spring.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
