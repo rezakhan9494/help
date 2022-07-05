@@ -1,0 +1,150 @@
+rror from server (NotFound): pods "noc-services-56659fbb56-s59pd" not found
+root@SUJOGBASTION:/home# kubectl describe pod  noc-services-56659fbb56-s59pd -n egov
+Name:         noc-services-56659fbb56-s59pd
+Namespace:    egov
+Priority:     0
+Node:         sujogk8wrk01.osdc.gov.in/10.150.231.4
+Start Time:   Tue, 05 Jul 2022 14:16:53 +0530
+Labels:       app=noc-services
+              group=rainmaker
+              pod-template-hash=56659fbb56
+Annotations:  <none>
+Status:       Running
+IP:           10.42.3.242
+IPs:
+  IP:           10.42.3.242
+Controlled By:  ReplicaSet/noc-services-56659fbb56
+Init Containers:
+  noc-services-db-migration:
+    Container ID:   containerd://2da17e47700b18acd6fe62fe8f832d6b190626e36221038d0a3a5d8025202c07
+    Image:          odhub/noc-services-db:rel2-19032021-1
+    Image ID:       docker.io/odhub/noc-services-db@sha256:1f9ee6a1122608024ae2a49c54ed5b6df4d00996e09f6cee18029706c0a742c1
+    Port:           <none>
+    Host Port:      <none>
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 05 Jul 2022 14:16:54 +0530
+      Finished:     Tue, 05 Jul 2022 14:16:55 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:
+      DB_URL:            <set to the key 'db-url' of config map 'egov-config'>  Optional: false
+      SCHEMA_TABLE:      property_services_schema
+      FLYWAY_USER:       <set to the key 'flyway-username' in secret 'db'>                Optional: false
+      FLYWAY_PASSWORD:   <set to the key 'flyway-password' in secret 'db'>                Optional: false
+      FLYWAY_LOCATIONS:  <set to the key 'flyway-locations' of config map 'egov-config'>  Optional: false
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-zppr5 (ro)
+Containers:
+  noc-services:
+    Container ID:   containerd://121b7b509a804efc4748fa9defb1aa4542252dfd1a2d75e6fc489bf052f87601
+    Image:          odhub/noc-services:rel2-28062022-1
+    Image ID:       docker.io/odhub/noc-services@sha256:da25a763c7002ad0d094a7484bd5c0d721b7bce16e0c41268c80d924070765a1
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 05 Jul 2022 14:44:18 +0530
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    137
+      Started:      Tue, 05 Jul 2022 14:16:56 +0530
+      Finished:     Tue, 05 Jul 2022 14:44:18 +0530
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      memory:  512Mi
+    Requests:
+      memory:   512Mi
+    Liveness:   http-get http://:8080/noc-services/health delay=120s timeout=3s period=60s #success=1 #failure=5
+    Readiness:  http-get http://:8080/noc-services/health delay=90s timeout=3s period=30s #success=1 #failure=5
+    Environment:
+      SPRING_DATASOURCE_URL:                     <set to the key 'db-url' of config map 'egov-config'>  Optional: false
+      SPRING_DATASOURCE_USERNAME:                <set to the key 'username' in secret 'db'>             Optional: false
+      SPRING_DATASOURCE_PASSWORD:                <set to the key 'password' in secret 'db'>             Optional: false
+      FLYWAY_URL:                                <set to the key 'db-url' of config map 'egov-config'>  Optional: false
+      SERVER_TOMCAT_MAX_THREADS:                 10
+      SERVER_TOMCAT_MAX_CONNECTIONS:             500
+      SPRING_DATASOURCE_TOMCAT_MAX_ACTIVE:       3
+      SPRING_DATASOURCE_TOMCAT_MAX_IDLE:         2
+      SPRING_DATASOURCE_TOMCAT_MIN_IDLE:         1
+      FLYWAY_ENABLED:                            false
+      EGOV_IDGEN_HOST:                           http://egov-idgen:8080/
+      EGOV_MDMS_HOST:                            http://egov-mdms-service:8080/
+      EGOV_USER_HOST:                            http://egov-user:8080/
+      EGOV_LOCATION_HOST:                        http://egov-location:8080/
+      EGOV_LOCALIZATION_HOST:                    http://egov-localization:8080/
+      EGOV_CALCULATION_HOST:                     http://pt-calculator-v2:8080/
+      FIRE_HOST:                                 https://www.agnishamaseva.odisha.gov.in
+      FIRE_NOC_TOKEN:                            fire-obpas-2022-9869874569852364
+      FIRE_NOC_GETFIREDISTRICTS_ENDPOINT:        /Webservices/getFiredistricts
+      FIRE_NOC_GETFIRESTATIONS_ENDPOINT:         /Webservices/getFirestations
+      FIRE_NOC_GETBUILDINGTYPES_ENDPOINT:        /Webservices/getBuildingtypes
+      FIRE_NOC_RECOMMENDATIONAPI_ENDPOINT:       /Webservices/recommendationApi
+      FIRE_NOC_RECOMMENDATIONSTATUS_ENDPOINT:    /Webservices/recommendationStatus
+      FIRE_NOC_RECOMMENDATIONID_ENDPOINT:        /Webservices/recommendation
+      NMA_CONTEXT_PATH:                          /nma_application/api/validateapplicant
+      NMA_ARCHITECT_REGISTRATION:                /architect_registration
+      NMA_APPLICATION_CREATE:                    /form_data
+      EGOV_BPA_HOST:                             http://bpa-services.egov:8080/
+      NMA_HOST:                                  https://nmanoc.nic.in/
+      EGOV_FILESTORE_HOST:                       http://egov-filestore:8080/
+      EGOV_EDCR_HOST:                            http://egov-edcr/
+      WORKFLOW_CONTEXT_PATH:                     http://egov-workflow-v2:8080/
+      WORKFLOW_TRANSITION_PATH:                  egov-workflow-v2/egov-wf/process/_transition
+      TRACER_ERRORS_PROVIDEEXCEPTIONINDETAILS:   true
+      SPRING_KAFKA_CONSUMER_VALUE_DESERIALIZER:  org.egov.tracer.kafka.deserializer.HashMapDeserializer
+      SPRING_KAFKA_CONSUMER_KEY_DESERIALIZER:    org.apache.kafka.common.serialization.StringDeserializer
+      SPRING_KAFKA_CONSUMER_GROUP_ID:            egov-noc-services
+      PERSISTER_NOC_PROPERTY_TOPIC:              save-noc-application
+      PERSISTER_UPDATE_NOC_TOPIC:                update-noc-application
+      PERSISTER_UPDATE_NOC_workflow:             update-noc-workflow
+      SPRING_KAFKA_PRODUCER_KEY_SERIALIZER:      org.apache.kafka.common.serialization.StringSerializer
+      SPRING_KAFKA_PRODUCER_VALUE_SERIALIZER:    org.springframework.kafka.support.serializer.JsonSerializer
+      JAVA_ENABLE_DEBUG:                         true
+      SPRING_KAFKA_BOOTSTRAP_SERVERS:            <set to the key 'kafka-brokers' of config map 'egov-config'>  Optional: false
+      APP_TIMEZONE:                              <set to the key 'timezone' of config map 'egov-config'>       Optional: false
+      JAVA_OPTS:                                 -Xmx256m -Xms192m
+      JAVA_ARGS:                                 -Dspring.profiles.active=monitoring
+      SPRING_JPA_SHOW_SQL:                       true
+      SERVER_PORT:                               8080
+      NOTIFICATION_URL:                          https://sujog.odisha.gov.in/citizen/property-tax
+      JAEGER_SERVICE_NAME:                       noc-services
+      JAEGER_SAMPLER_TYPE:                       remote
+      JAEGER_AGENT_HOST:                          (v1:status.hostIP)
+      JAEGER_AGENT_PORT:                         6831
+      JAEGER_SAMPLER_MANAGER_HOST_PORT:          $(JAEGER_AGENT_HOST):5778
+      SECURITY_BASIC_ENABLED:                    false
+      MANAGEMENT_SECURITY_ENABLED:               false
+      NOTIFICATION_SMS_ENABLED:                  
+      EGOV_USER_EVENT_NOTIFICATION_ENABLED:      true
+      EGOV_UI_APP_HOST:                          https://sujog.odisha.gov.in/
+      EGOV_USR_EVENTS_CREATE_TOPIC:              persist-user-events-async
+      EGOV_USR_EVENTS_PAY_LINK:                  /citizen/otpLogin?mobileNo=$mobile&redirectTo=egov-common/pay?consumerCode=$consumerCode&tenantId=$tenantId
+      EGOV_USR_EVENTS_PAY_CODE:                  PAY
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-zppr5 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-zppr5:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-zppr5
+    Optional:    false
+QoS Class:       Burstable
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                 From     Message
+  ----     ------     ----                ----     -------
+  Normal   Killing    36m                 kubelet  Container noc-services failed liveness probe, will be restarted
+  Normal   Pulled     36m (x2 over 63m)   kubelet  Container image "odhub/noc-services:rel2-28062022-1" already present on machine
+  Normal   Created    36m (x2 over 63m)   kubelet  Created container noc-services
+  Normal   Started    36m (x2 over 63m)   kubelet  Started container noc-services
+  Warning  Unhealthy  50s (x18 over 40m)  kubelet  Readiness probe failed: Get "http://10.42.3.242:8080/noc-services/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+  Warning  Unhealthy  46s (x10 over 40m)  kubelet  Liveness probe failed: Get "http://10.42.3.242:8080/noc-services/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
