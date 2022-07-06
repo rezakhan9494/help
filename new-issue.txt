@@ -4,3 +4,10 @@ BP-BMC-2022-07-05-005793 - pay
 'BP-BDA-2022-05-19-003739','BP-RRK-2022-06-01-003983' -> need to back processinstance
 
 BP-BDA-2022-07-05-005767 syn status
+
+
+--------------------
+
+-- document delete 
+BP-BDA-2022-05-30-003858
+BP-BDA-2022-05-29-003842
