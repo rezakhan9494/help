@@ -1,0 +1,4 @@
+select ebb.applicationno, ebd.documenttype, ebd.documentuid from eg_bpa_buildingplan ebb inner join eg_bpa_document ebd  on ebd.buildingplanid = ebb.id where ebb.applicationno in ('BP-BDA-2022-05-30-003858',
+'BP-BDA-2022-05-29-003842',
+'BP-SMB-2022-02-07-000722');
+
