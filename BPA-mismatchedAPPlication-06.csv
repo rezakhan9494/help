@@ -1,6 +1,0 @@
-"tenantid","applicationno","actioninprocessinstance","currentstatus","expectedstatus"
-"od.bhubaneswardevelopmentauthority","BP-BDA-2022-05-02-003118","APPROVE","APPROVAL_INPROGRESS","PENDING_SANC_FEE_PAYMENT"
-"od.bhubaneswardevelopmentauthority","BP-BDA-2022-05-19-003739","APPROVE","APPROVAL_INPROGRESS","PENDING_SANC_FEE_PAYMENT"
-"od.bhubaneswardevelopmentauthority","BP-BDA-2022-07-05-005767","APPLY","INPROGRESS","PENDING_APPL_FEE"
-"od.bhubaneswar","BP-BMC-2022-03-04-001373","APPROVE","APPROVAL_INPROGRESS","PENDING_SANC_FEE_PAYMENT"
-"od.rourkela","BP-RRK-2022-06-01-003983","APPROVE","APPROVAL_INPROGRESS","PENDING_SANC_FEE_PAYMENT"
