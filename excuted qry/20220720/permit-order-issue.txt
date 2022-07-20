@@ -1,0 +1,10 @@
+update eg_bpa_dscdetails set documenttype=null,documentid=null where buildingplanid = (select id from eg_bpa_buildingplan ebb where applicationno='BP-RRK-2021-11-12-000150');
+update eg_bpa_dscdetails set documenttype=null,documentid=null where buildingplanid = (select id from eg_bpa_buildingplan ebb where applicationno='BP-RRK-2022-03-08-001482');
+update eg_bpa_dscdetails set documenttype=null,documentid=null where buildingplanid = (select id from eg_bpa_buildingplan ebb where applicationno='BP-BMC-2022-02-08-000744');
+update eg_bpa_dscdetails set documenttype=null,documentid=null where buildingplanid = (select id from eg_bpa_buildingplan ebb where applicationno='BP-CTC-2022-04-11-002428');
+update eg_bpa_dscdetails set documenttype=null,documentid=null where buildingplanid = (select id from eg_bpa_buildingplan ebb where applicationno='BP-CTC-2022-04-26-002894');
+update eg_bpa_dscdetails set documenttype=null,documentid=null where buildingplanid = (select id from eg_bpa_buildingplan ebb where applicationno='BP-BMC-2022-05-31-003932');
+update eg_bpa_dscdetails set documenttype=null,documentid=null where buildingplanid = (select id from eg_bpa_buildingplan ebb where applicationno='BP-BDA-2022-06-29-005549');
+update eg_bpa_dscdetails set documenttype=null,documentid=null where buildingplanid = (select id from eg_bpa_buildingplan ebb where applicationno='BP-CTC-2022-04-04-002188');
+update eg_bpa_dscdetails set documenttype=null,documentid=null where buildingplanid = (select id from eg_bpa_buildingplan ebb where applicationno='BP-BAM-2022-04-07-002315');
+update eg_bpa_dscdetails set documenttype=null,documentid=null where buildingplanid = (select id from eg_bpa_buildingplan ebb where applicationno='BP-RRK-2022-04-06-002272');
