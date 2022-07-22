@@ -1,0 +1,12 @@
+delete from eg_wf_processinstance_v2 where id in ('1bf49c59-0267-4922-8a28-dda62c748905',
+'4bfd260f-f14f-4b9c-ba89-e11a53896f97');
+
+
+update eg_bpa_buildingplan set status=
+(select applicationStatus from 
+(select distinct on(businessid) * from eg_wf_processinstance_v2 ewpv order by businessid,createdtime desc) ewpv
+inner join eg_wf_state_v2 ewsv on ewsv.uuid=ewpv.status where ewpv.businessid ='BP-BDA-2022-03-26-001959')
+where applicationno ='BP-BDA-2022-03-26-001959';
+
+
+update eg_bpa_buildingplan  set approvalno = null where applicationno ='BP-BDA-2022-03-26-001959' and approvalno ='BP/BDA/000294';

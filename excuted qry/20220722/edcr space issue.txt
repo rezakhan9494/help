@@ -1,0 +1,24 @@
+-- BP-BDA-2022-01-26-000545	"	DCR12022UJE3L"
+
+update eg_bpa_buildingplan set edcrnumber = 'DCR12022UJE3L' where applicationno ='BP-BDA-2022-01-26-000545';
+
+-- BP-BMC-2022-07-05-005793	"	DCR62022C40IF"
+
+update eg_bpa_buildingplan set edcrnumber = 'DCR62022C40IF' where applicationno ='BP-BMC-2022-07-05-005793';
+
+-- BP-RRK-2021-12-09-000189	"	DCR122021B418T"
+
+update eg_bpa_buildingplan set edcrnumber = 'DCR122021B418T' where applicationno ='BP-RRK-2021-12-09-000189';
+
+-- BP-RRK-2022-03-13-001645	"	DCR32022DORNB"
+
+update eg_bpa_buildingplan set edcrnumber = 'DCR32022DORNB' where applicationno ='BP-RRK-2022-03-13-001645';
+
+
+-- BP-RRK-2022-06-01-003983	"	DCR62022NLOK7"
+
+update eg_bpa_buildingplan set edcrnumber = 'DCR62022NLOK7' where applicationno ='BP-RRK-2022-06-01-003983';
+
+-- BP-SMB-2022-02-08-000751	DCR22022XH1EN  
+
+update eg_bpa_buildingplan set edcrnumber = 'DCR22022XH1EN' where applicationno ='BP-SMB-2022-02-08-000751';
