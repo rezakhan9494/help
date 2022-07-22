@@ -1,7 +1,14 @@
-'BP-BDA-2022-01-26-000545',
-'BP-BAM-2022-03-05-001397',
-'BP-RRK-2022-03-08-001482',
-'BP-RRK-2021-11-12-000150'
+BP-BDA-2022-03-26-001959
 
-'BP/SMB/000135', -> BP-SMB-2022-03-16-001752
-'BP/BAM/000105' -> BP-BAM-2022-03-05-001397
+eg_wf_processinstance_v2 -> id
+
+1bf49c59-0267-4922-8a28-dda62c748905
+4bfd260f-f14f-4b9c-ba89-e11a53896f97
+
+status match qry
+
+
+eg_bpa_buildingplan
+approvalNo - BP/BDA/000294
+
+------------------
