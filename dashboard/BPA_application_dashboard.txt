@@ -1,0 +1,36 @@
+-- BPA application Report
+select
+	initcap(split_part(tenantid,'.',2)) as ulb,
+	applicationno,
+	businessservice,
+	case
+		when createdtime >0 then to_timestamp(createdtime / 1000)::date 
+	end as createdtime,
+	case
+		when applicationdate >0 then to_timestamp(applicationdate / 1000)::date
+	end as applicationdate,
+	status,
+	approvalno,
+	case
+		when approvaldate >0 then to_timestamp(approvaldate / 1000)::date
+	end as approvaldate
+from
+	eg_bpa_buildingplan;
+	
+-- BPA Collection Report
+select
+	initcap(split_part(tenantid,'.',2)) as ulb
+	, to_timestamp(receiptdate/1000)::date as receiptdate
+	, receiptnumber
+	, to_timestamp(createdtime/1000)::date as createdtime
+	, amountpaid
+	, case
+	   when businessservice='WS.ONE_TIME_FEE' then 'WS Application Fee'
+	   when businessservice='WS' then 'WS Monthly Fee'
+	   when businessservice='BPA.NC_SAN_FEE' then 'BPA Sanction Fee'
+	   when businessservice='BPA.NC_APP_FEE' then 'BPA Application Fee'
+	   when businessservice='PT.MUTATION' then 'PT Mutation Fee'
+	   when businessservice='PT' then 'Property Tax'
+	 end as feeType
+from egcl_paymentdetail ep
+where businessservice in ('BPA.NC_SAN_FEE','BPA.NC_APP_FEE');
