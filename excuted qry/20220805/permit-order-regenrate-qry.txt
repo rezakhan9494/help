@@ -5,4 +5,5 @@ select * from eg_bpa_dscdetails ebd where applicationno in ('BP-RRK-2022-06-01-0
 'BP-RRK-2021-11-12-000150',
 'BP-BMC-2022-03-20-001838',
 'BP-BMC-2022-06-02-004042',
-'BP-BDA-2022-05-02-003118');
+'BP-BDA-2022-05-02-003118',
+'BP-BMC-2022-03-21-001865');
