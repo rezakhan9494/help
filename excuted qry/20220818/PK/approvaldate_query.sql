@@ -11,6 +11,4 @@ select approvaldate, * from eg_bpa_auditdetails eba where applicationno in
 order by ebb.createdtime  asc) order by applicationno,lastmodifiedtime ;
 
 --query to fix the approvaldate of such applications with the createdtime of dsc table entry--
-update eg_bpa_buildingplan set approvaldate =
-(select createdtime from eg_bpa_dscdetails ebd where ebd.applicationno='BP-CTC-2022-07-29-002320')
-where applicationno ='BP-CTC-2022-07-29-002320';
+update eg_bpa_buildingplan set approvaldate = (select createdtime from eg_wf_processinstance_v2 ewpv where businessid='APPLICATIONNO' and action='PAY' order by createdtime desc limit 1) where applicationno ='APPLICATIONNO';
