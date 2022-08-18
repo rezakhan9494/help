@@ -1,0 +1,2 @@
+--identify applications with space as other fee--
+select * from eg_bpa_buildingplan where additionaldetails->>'sanctionFeeAdjustmentAmount'=' ' or additionaldetails->>'modificationReasonSanctionFeeAdjustmentAmount'=' ';
