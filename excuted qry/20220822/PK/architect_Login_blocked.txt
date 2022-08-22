@@ -1,1 +1,4 @@
 select * from eg_user where uuid in ('64bf6ec5-7267-4a05-bda0-fda02f5faf94','5f362b66-0383-4c30-9631-b5afc1d570ba');
+
+--unblock--
+update eg_user set accountlocked=false where uuid in ('64bf6ec5-7267-4a05-bda0-fda02f5faf94','5f362b66-0383-4c30-9631-b5afc1d570ba');
