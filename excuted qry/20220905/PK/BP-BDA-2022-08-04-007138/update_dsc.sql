@@ -1,0 +1,1 @@
+update eg_bpa_dscdetails set documenttype=null,documentid=null where applicationno ='BP-BDA-2022-08-04-007138';

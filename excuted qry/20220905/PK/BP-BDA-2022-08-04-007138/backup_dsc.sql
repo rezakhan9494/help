@@ -1,0 +1,1 @@
+select * from eg_bpa_dscdetails where applicationno='BP-BDA-2022-08-04-007138';
