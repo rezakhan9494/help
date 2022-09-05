@@ -1,7 +1,7 @@
 ------BP-BDA-2022-07-07-005886 noc delete
-delete from eg_noc_document end2 where nocid =
-(select id from eg_noc where sourcerefid ='BP-BDA-2022-07-07-005886' and noctype='FIRE_NOC');
-delete from eg_noc where sourcerefid ='BP-BDA-2022-07-07-005886' and noctype='FIRE_NOC';
+delete from eg_noc_document end2 where nocid in
+(select id from eg_noc where sourcerefid ='BP-BDA-2022-07-07-005886');
+delete from eg_noc where sourcerefid ='BP-BDA-2022-07-07-005886';
 
 
 --BP-BDA-2022-07-07-005886 delete duplicate docs
