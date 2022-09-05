@@ -1,0 +1,1 @@
+select approvedby,applicationno from eg_bpa_dscdetails where applicationno='BP-BDA-2022-07-12-006013';
