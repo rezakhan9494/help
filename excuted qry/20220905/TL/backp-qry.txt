@@ -1,0 +1,5 @@
+select * from eg_tl_billingslab etb where etb.tradetype ='NONEATINGNONMEDICALESTABLISHMENTS.TST227' and etb.tenantid='od.anandapur';
+select * from eg_tl_billingslab etb where etb.tradetype ='NONEATINGNONMEDICALESTABLISHMENTS.TST292' and etb.tenantid='od.nimapara';
+select * from eg_tl_billingslab etb where etb.tradetype ='NONEATINGNONMEDICALESTABLISHMENTS.TST155' and etb.tenantid='od.nimapara';
+select * from eg_tl_billingslab etb where etb.tradetype ='EATINGESTABLISHMENTS.TST33' and etb.tenantid='od.rourkela';
+select * from eg_tl_billingslab etb where etb.tradetype ='EATINGESTABLISHMENTS.TST3' and etb.tenantid='od.digapahandi';
