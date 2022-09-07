@@ -1,0 +1,1 @@
+select count(*) from eg_bpa_buildingplan ebb where status ='APPROVED';
