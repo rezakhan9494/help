@@ -1,0 +1,3 @@
+SELECT dbs.datname, roles.rolname
+  FROM pg_catalog.pg_database dbs, pg_catalog.pg_roles roles
+ WHERE dbs.datdba = roles.oid;
