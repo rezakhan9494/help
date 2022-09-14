@@ -1,0 +1,2 @@
+--BP-BMC-2022-04-29-003037 remove old permit letter as 1970 date appearing even after removing 0 approvalDate
+update eg_bpa_dscdetails set documenttype=null,documentid=null where applicationno='BP-BMC-2022-04-29-003037';
