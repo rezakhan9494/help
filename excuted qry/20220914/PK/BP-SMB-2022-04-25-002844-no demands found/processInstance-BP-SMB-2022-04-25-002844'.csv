@@ -1,0 +1,2 @@
+"id","tenantid","businessservice","businessid","action","status","comment","assigner","assignee","statesla","previousstatus","createdby","lastmodifiedby","createdtime","lastmodifiedtime","modulename","businessservicesla","rating"
+"fce81383-5c53-408d-bed8-50f0ef673604","od.sambalpur","BPA1","BP-SMB-2022-04-25-002844","APPROVE","c3b95766-9a02-4bee-ac6c-671ac168c752",NULL,"c297f296-78a9-472c-8fef-be65c36e0640",NULL,NULL,NULL,"c297f296-78a9-472c-8fef-be65c36e0640","c297f296-78a9-472c-8fef-be65c36e0640","1658991582358","1658991582358","bpa-services","-2933729636",NULL
