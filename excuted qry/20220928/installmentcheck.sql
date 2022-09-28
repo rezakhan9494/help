@@ -1,0 +1,1 @@
+select * from public.eg_bpa_installment where consumercode  in ('BP-BAM-2022-06-13-004654','BP-JTN-2022-08-03-007071','BP-RRK-2022-08-03-007048');
