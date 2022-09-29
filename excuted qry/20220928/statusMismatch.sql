@@ -25,8 +25,8 @@ update eg_bpa_buildingplan set status=(select applicationStatus from (select dis
 
 
 
-delete from eg_bpa_installment where consumercode in ('BP-JTN-2022-08-03-007071');
 
+#no installment generated  for this
 
 delete from eg_wf_processinstance_v2 where id=(select id from eg_wf_processinstance_v2 where businessid='BP-JTN-2022-08-03-007071' order by createdtime desc limit 1);
 
@@ -37,7 +37,7 @@ update eg_bpa_buildingplan set status=(select applicationStatus from (select dis
 
 
 
-delete from eg_bpa_installment where consumercode in ('BP-RRK-2022-08-03-007048');
+#no installment generated  for this
 
 
 delete from eg_wf_processinstance_v2 where id=(select id from eg_wf_processinstance_v2 where businessid='BP-RRK-2022-08-03-007048' order by createdtime desc limit 1);
