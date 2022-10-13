@@ -1,0 +1,26 @@
+-- BP-BAM-2022-08-06-007239
+
+select * from public.eg_bpa_installment where consumercode = 'BP-BAM-2022-08-06-007239';
+
+select * from public.egbs_demand_v1 where consumercode = 'BP-BAM-2022-08-06-007239';
+
+select * from public.eg_bpa_dscdetails ebd where applicationno  ='BP-BAM-2022-08-06-007239';
+
+
+-- BP-BAM-2022-08-25-007804
+
+select * from public.eg_bpa_installment where consumercode = 'BP-BAM-2022-08-25-007804';
+
+select * from public.egbs_demand_v1 where consumercode = 'BP-BAM-2022-08-25-007804';
+
+select * from public.eg_bpa_dscdetails ebd where applicationno  ='BP-BAM-2022-08-25-007804';
+
+-- BP-CTC-2022-09-14-008446
+
+
+select * from public.eg_bpa_installment where consumercode = 'BP-CTC-2022-09-14-008446';
+
+select * from public.egbs_demand_v1 where consumercode = 'BP-CTC-2022-09-14-008446';
+
+select * from public.eg_bpa_dscdetails ebd where applicationno  ='BP-CTC-2022-09-14-008446';
+
