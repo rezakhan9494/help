@@ -11,3 +11,29 @@ select * from public.eg_wf_processinstance_v2 ewpv where status in (select uuid 
 BP-BAM-2022-08-06-007239
 BP-BMC-2022-07-02-005670
 BP-CTC-2022-07-06-005850
+
+
+select * from public.eg_bpa_buildingplan where applicationno in ('BP-BAM-2022-08-06-007239','BP-BMC-2022-07-02-005670','BP-CTC-2022-07-06-005850')
+
+select * from public.eg_bpa_dscdetails where applicationno in ('BP-BAM-2022-08-06-007239','BP-BMC-2022-07-02-005670','BP-CTC-2022-07-06-005850')
+
+
+select * from public.eg_wf_processinstance_v2 ewpv where businessservice like 'BPA%' and createdtime > 1665623912000;
+
+select * from public.eg_bpa_buildingplan ebb where applicationno in (select businessid from public.eg_wf_processinstance_v2 ewpv where status in (select uuid from public.eg_wf_state_v2 ewsv  where businessserviceid in (select uuid from public.eg_wf_businessservice_v2 ewbv where businessservice in ('BPA1','BPA2','BPA3','BPA4','BPA5')) and state = 'PENDING_SANC_FEE_PAYMENT') and createdtime > 1665623912000);
+
+select DISTINCT consumercode from public.eg_bpa_installment ebi where consumercode in (select businessid from public.eg_wf_processinstance_v2 ewpv where status in (select uuid from public.eg_wf_state_v2 ewsv  where businessserviceid in (select uuid from public.eg_wf_businessservice_v2 ewbv where businessservice in ('BPA1','BPA2','BPA3','BPA4','BPA5')) and state = 'PENDING_SANC_FEE_PAYMENT') and createdtime > 1665623912000);
+
+select DISTINCT applicationno from public.eg_bpa_dscdetails ebd where applicationno in (select businessid from public.eg_wf_processinstance_v2 ewpv where status in (select uuid from public.eg_wf_state_v2 ewsv  where businessserviceid in (select uuid from public.eg_wf_businessservice_v2 ewbv where businessservice in ('BPA1','BPA2','BPA3','BPA4','BPA5')) and state = 'PENDING_SANC_FEE_PAYMENT') and createdtime > 1665623912000);
+
+
+select ebb.tenantid,ebb.applicationno,ewpv."action" as actionInProcessInstance,ebb.status as currentStatus
+,ewsv.applicationstatus as expectedStatus
+from eg_bpa_buildingplan ebb 
+inner join (select distinct on(businessid) * from eg_wf_processinstance_v2 order by businessid,createdtime desc)
+		ewpv on ewpv.businessid=ebb.applicationno
+inner join eg_wf_state_v2 ewsv on ewsv.uuid=ewpv.status 
+where ebb.status<>ewsv.applicationstatus;
+
+
+select businessid from public.eg_wf_processinstance_v2 ewpv where status in (select uuid from public.eg_wf_state_v2 ewsv  where businessserviceid in (select uuid from public.eg_wf_businessservice_v2 ewbv where businessservice in ('BPA1','BPA2','BPA3','BPA4','BPA5')) and state = 'PENDING_SANC_FEE_PAYMENT') and createdtime > 1665623912000;
