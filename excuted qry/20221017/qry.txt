@@ -3,3 +3,6 @@ select * from public.eg_bpa_buildingplan ebb where applicationno in (select busi
 select * from public.eg_bpa_installment ebi where consumercode in (select businessid from public.eg_wf_processinstance_v2 ewpv where "action" = 'APPROVE' and businessservice like 'BPA%' and createdtime > 1665623912000);
 
 select * from public.eg_bpa_dscdetails ebd where applicationno in (select businessid from public.eg_wf_processinstance_v2 ewpv where "action" = 'APPROVE' and businessservice like 'BPA%' and createdtime > 1665623912000);
+
+
+select * from public.eg_wf_processinstance_v2 ewpv where status in (select uuid from public.eg_wf_state_v2 ewsv  where businessserviceid in (select uuid from public.eg_wf_businessservice_v2 ewbv where businessservice in ('BPA1','BPA2','BPA3','BPA4','BPA5')) and state = 'PENDING_SANC_FEE_PAYMENT') and createdtime > 1665623912000;
