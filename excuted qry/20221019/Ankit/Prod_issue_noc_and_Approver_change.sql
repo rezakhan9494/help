@@ -1,21 +1,21 @@
 --BP-BMC-2022-04-12-002454 delete NOC
 
-delete from eg_noc where sourcerefid = 'BP-BMC-2022-04-12-002454' and noctype='FIRE_NOC';
+delete from eg_noc where sourcerefid = 'BP-BMC-2022-04-12-002454' and noctype='FIRE_NOC'; -- done
 delete from eg_noc_document end2 where nocid =
-(select id from eg_noc where sourcerefid = 'BP-BMC-2022-04-12-002454' and noctype='FIRE_NOC');
+(select id from eg_noc where sourcerefid = 'BP-BMC-2022-04-12-002454' and noctype='FIRE_NOC'); -- done
 
 
 --BP-BMC-2022-04-25-002847  delete NOC
-delete from eg_noc where sourcerefid = 'BP-BMC-2022-04-25-002847' and noctype='FIRE_NOC';
+delete from eg_noc where sourcerefid = 'BP-BMC-2022-04-25-002847' and noctype='FIRE_NOC'; -- done
 delete from eg_noc_document end2 where nocid =
-(select id from eg_noc where sourcerefid = 'BP-BMC-2022-04-25-002847' and noctype='FIRE_NOC');
+(select id from eg_noc where sourcerefid = 'BP-BMC-2022-04-25-002847' and noctype='FIRE_NOC'); -- done
 
 
 
 --BP-SMB-2022-07-25-006501 delete NOC
-delete from eg_noc where sourcerefid = 'BP-SMB-2022-07-25-006501' and noctype='FIRE_NOC';
+delete from eg_noc where sourcerefid = 'BP-SMB-2022-07-25-006501' and noctype='FIRE_NOC'; -- done
 delete from eg_noc_document end2 where nocid =
-(select id from eg_noc where sourcerefid = 'BP-SMB-2022-07-25-006501' and noctype='FIRE_NOC');
+(select id from eg_noc where sourcerefid = 'BP-SMB-2022-07-25-006501' and noctype='FIRE_NOC'); -- done
 
 
 
