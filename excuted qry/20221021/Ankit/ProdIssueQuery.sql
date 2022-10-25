@@ -1,16 +1,29 @@
 
 ---Approver uploaded unsigned building plan--
-select * from eg_bpa_buildingplan ebb where ebb.applicationno ='BP-BMC-2022-08-03-007083'
+
+--Take backup--
+select * from eg_bpa_buildingplan ebb where ebb.applicationno ='BP-BMC-2022-08-03-007083';
 
 
 --need to remove this key from addition details column "buildingPlanLayoutIsSigned": true
+select ebb.id,ebb.applicationno ,ebb.status ,ebb.additionaldetails->>'buildingPlanLayoutIsSigned' as required_data from eg_bpa_buildingplan ebb where ebb.applicationno ='BP-BMC-2022-08-03-007083';
+
+update eg_bpa_buildingplan set additionaldetails=additionaldetails - 'buildingPlanLayoutIsSigned' where applicationno ='BP-BMC-2022-08-03-007083';
+
 
 
 ---Approver uploaded unsigned building plan--
-select * from eg_bpa_buildingplan ebb where ebb.applicationno ='BP-BMC-2022-04-05-002251'
+--take backup--
+
+select * from eg_bpa_buildingplan ebb where ebb.applicationno ='BP-BMC-2022-04-05-002251';
 
 
---need to remove this key from addition details column "buildingPlanLayoutIsSigned": true
+--need to remove this attribute from addition details column "buildingPlanLayoutIsSigned": true
+
+select ebb.id,ebb.applicationno ,ebb.status ,ebb.additionaldetails->>'buildingPlanLayoutIsSigned' as required_data from eg_bpa_buildingplan ebb where ebb.applicationno ='BP-BMC-2022-04-05-002251';
+
+update eg_bpa_buildingplan set additionaldetails=additionaldetails - 'buildingPlanLayoutIsSigned' where applicationno ='BP-BMC-2022-04-05-002251';
+
 
 
 
