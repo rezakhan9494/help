@@ -1,0 +1,15 @@
+INSERT INTO public.eg_wf_processinstance_v2(id,consumercode,consumertype,businessservice,payer,taxperiodfrom,taxperiodto,createdby,createdtime,lastmodifiedby,lastmodifiedtime,tenantid,minimumamountpayable,status,additionaldetails,billexpirytime,ispaymentcompleted,fixedbillexpirydate) VALUES ('e0b546cc-62c8-4cc0-a8fe-a1b97d435a0b','od.bhubaneswar','BPA1','BP-BMC-2022-10-28-009752','APPLY',0f27313f-a669-44ad-8a6e-a4fda4654c76,NULL,'abe089a8-6fc1-42e7-95c7-07ef9dbac41f',NULL,NULL,NULL,'abe089a8-6fc1-42e7-95c7-07ef9dbac41f',abe089a8-6fc1-42e7-95c7-07ef9dbac41f,'1666955904158','1666955904158',bpa-services,'5169514323',NULL);
+
+
+
+INSERT INTO public.egbs_demand_v1_edv(id,consumercode,consumertype,businessservice,payer,taxperiodfrom,taxperiodto,createdby,createdtime,lastmodifiedby,lastmodifiedtime,tenantid,minimumamountpayable,status,additionaldetails,billexpirytime,ispaymentcompleted,fixedbillexpirydate) VALUES ('f1bae193-dabc-413d-a0a5-357fae9c3b3a','BP-BMC-2022-10-28-009752','BPA','BPA.NC_APP_FEE','e5bb145f-b43c-4b7c-a53f-2c9b355f2208',1641021385016,1672470985016,'abe089a8-6fc1-42e7-95c7-07ef9dbac41f',1666941418726,'abe089a8-6fc1-42e7-95c7-07ef9dbac41f',1666941418726,'od.bhubaneswar',100.00,'ACTIVE',NULL,2629800000,'False',NULL);
+
+
+INSERT INTO public.egbs_demanddetail_v1(id,demandid,taxheadcode,taxamount,collectionamount,createdby,createdtime,lastmodifiedby,lastmodifiedtime,tenantid,additionaldetails) VALUES ('24d7c664-938a-4d29-b02f-9cf6deb45a08','f1bae193-dabc-413d-a0a5-357fae9c3b3a','BPA_BLDNG_OPRN_FEE',2543.00,0.00,'abe089a8-6fc1-42e7-95c7-07ef9dbac41f',1666941418726,'abe089a8-6fc1-42e7-95c7-07ef9dbac41f',1666941418726,'od.bhubaneswar',NULL);
+
+
+update eg_bpa_buildingplan set status=
+(select applicationStatus from 
+(select distinct on(businessid) * from eg_wf_processinstance_v2 ewpv order by businessid,createdtime desc) ewpv
+inner join eg_wf_state_v2 ewsv on ewsv.uuid=ewpv.status where ewpv.businessid ='BP-BMC-2022-10-28-009752')
+where applicationno ='BP-BMC-2022-10-28-009752';
