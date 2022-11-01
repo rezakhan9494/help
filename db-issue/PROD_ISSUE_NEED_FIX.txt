@@ -1,0 +1,9 @@
+BPA application fee.
+BP-BMC-2022-10-28-009752 -- 1 step behind and demand not created.
+
+BPA sanction fee.
+BP-BAM-2022-08-26-007849 --OK
+BP-BDA-2022-02-24-001125 -- 1 step behind and demand not created.
+BP-BMC-2022-05-12-003549 -- Demand not created.
+BP-CTC-2022-09-06-008140 -- OK
+
