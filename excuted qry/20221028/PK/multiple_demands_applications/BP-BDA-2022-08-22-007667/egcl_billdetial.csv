@@ -1,0 +1,2 @@
+"id","tenantid","demandid","billid","amount","amountpaid","fromperiod","toperiod","additionaldetails","channel","voucherheader","boundary","collectiontype","billdescription","expirydate","displaymessage","callbackforapportioning","cancellationremarks"
+"5a25b599-b09d-4fe8-84af-aba06e6c271d","od.bhubaneswardevelopmentauthority","b5fa82ba-833c-468b-a7b0-aa3efbd7e35a","6ccdd60a-5007-4cf9-a7ad-d6fdebfeaba4",81652.00,81652.00,1641021870944,1672471470944,"null",NULL,NULL,NULL,NULL,NULL,"1667779199634",NULL,NULL,NULL

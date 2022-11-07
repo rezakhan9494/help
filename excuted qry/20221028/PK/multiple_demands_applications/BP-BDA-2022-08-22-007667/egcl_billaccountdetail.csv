@@ -1,0 +1,9 @@
+"id","tenantid","billdetailid","demanddetailid","order","amount","isactualdemand","taxheadcode","additionaldetails","adjustedamount"
+"decad2d1-6850-44ff-ad78-7cb665823289","od.bhubaneswardevelopmentauthority","5a25b599-b09d-4fe8-84af-aba06e6c271d","a323a6a7-684a-449e-9e1b-b05035c2f6b9",2,0.00,NULL,"BPA_SANC_SHELTER_FEE","null",0.00
+"ae04e7e1-c381-4ff8-9e8a-1bc9dbb124c9","od.bhubaneswardevelopmentauthority","5a25b599-b09d-4fe8-84af-aba06e6c271d","056613e0-63d2-4c5b-8ec5-53541a15ee7c",2,14010.00,NULL,"BPA_SANC_ADJUSTMENT_AMOUNT","null",14010.00
+"838bdb60-8583-4658-9f60-9d4a7c1a800c","od.bhubaneswardevelopmentauthority","5a25b599-b09d-4fe8-84af-aba06e6c271d","d8ea8866-638f-4ef8-ba52-ccbef01f47fa",2,0.00,NULL,"BPA_SANC_SECURITY_DEPOSIT","null",0.00
+"a7e4e8ed-9940-451c-80a6-c7335b4b72eb","od.bhubaneswardevelopmentauthority","5a25b599-b09d-4fe8-84af-aba06e6c271d","beaa03d2-2cf0-45da-89be-dc014e2b4cbb",2,0.00,NULL,"BPA_SANC_PUR_FAR","null",0.00
+"dcaf125d-947b-47fd-9fae-9063deebbe6a","od.bhubaneswardevelopmentauthority","5a25b599-b09d-4fe8-84af-aba06e6c271d","52a10057-5b8a-4cae-98cf-04567284f8b0",2,4809.00,NULL,"BPA_SANC_SANC_FEE","null",4809.00
+"f5a29f9d-e3d7-4369-ada0-9350b47968f9","od.bhubaneswardevelopmentauthority","5a25b599-b09d-4fe8-84af-aba06e6c271d","184bf659-0eda-4038-a9ee-497b16d0cc0f",2,0.00,NULL,"BPA_SANC_TEMP_RETENTION_FEE","null",0.00
+"42e82612-5422-40de-b1ff-bfa309a846d3","od.bhubaneswardevelopmentauthority","5a25b599-b09d-4fe8-84af-aba06e6c271d","341d501e-773d-4444-987f-f3817b11728f",2,62833.00,NULL,"BPA_SANC_WORKER_WELFARE_CESS","null",62833.00
+"317372e1-5e7c-4338-8b86-f4c99ce570b9","od.bhubaneswardevelopmentauthority","5a25b599-b09d-4fe8-84af-aba06e6c271d","a1a2e56a-e72d-43e8-8757-5051a333ac9a",2,0.00,NULL,"BPA_SANC_EIDP_FEE","null",0.00
