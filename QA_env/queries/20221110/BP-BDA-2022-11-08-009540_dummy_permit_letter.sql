@@ -1,0 +1,2 @@
+--getting BPA_ALTERATION_APPLICATION_INPROGRESS so setting permit letter-
+update eg_bpa_dscdetails set documentType='dummy',documentId='e2a31a66-4300-45b8-a49d-18d57c22cb02' where applicationno='BP-BDA-2022-11-08-009540';
