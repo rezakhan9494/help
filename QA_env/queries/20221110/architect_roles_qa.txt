@@ -1,0 +1,32 @@
+INSERT INTO EG_USERROLE_V1
+            (role_code,role_tenantid,user_id,user_tenantid,lastmodifieddate)
+VALUES      ('BPA_ARCHITECT','od',3367179,'od',Now());
+
+INSERT INTO EG_USERROLE_V1
+            (role_code,role_tenantid,user_id,user_tenantid,lastmodifieddate)
+VALUES      ('BPA_ARCHITECT','od',3367240,'od',Now());
+
+
+INSERT INTO EG_USERROLE_V1
+            (role_code,role_tenantid,user_id,user_tenantid,lastmodifieddate)
+VALUES      ('BPA_ARCHITECT','od',3367237,'od',Now());
+
+
+INSERT INTO EG_USERROLE_V1
+            (role_code,role_tenantid,user_id,user_tenantid,lastmodifieddate)
+VALUES      ('BPA_ARCHITECT','od',3179504,'od',Now());
+
+
+INSERT INTO EG_USERROLE_V1
+            (role_code,role_tenantid,user_id,user_tenantid,lastmodifieddate)
+VALUES      ('BPA_ARCHITECT','od',3273405,'od',Now());
+
+
+-- accredited persons role for Freddy-
+INSERT INTO EG_USERROLE_V1
+            (role_code,role_tenantid,user_id,user_tenantid,lastmodifieddate)
+VALUES      ('BPA_ARC_APPROVER','od',718,'od',Now());
+
+INSERT INTO EG_USERROLE_V1
+            (role_code,role_tenantid,user_id,user_tenantid,lastmodifieddate)
+VALUES      ('ACCREDITED_PERSONS_ADMIN','od',718,'od',Now());
