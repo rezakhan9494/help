@@ -1,0 +1,7 @@
+INSERT INTO EG_USERROLE_V1
+            (role_code,role_tenantid,user_id,user_tenantid,lastmodifieddate)
+VALUES      ('BPA_TECHNICALPERSON','od',3367179,'od',Now()),
+('BPA_TECHNICALPERSON','od',3367240,'od',Now()),
+('BPA_TECHNICALPERSON','od',3367237,'od',Now()),
+('BPA_TECHNICALPERSON','od',3179504,'od',Now()),
+('BPA_TECHNICALPERSON','od',3273405,'od',Now());
