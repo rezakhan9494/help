@@ -1,0 +1,1 @@
+delete from eg_wf_assignee_v2 where processinstanceid='e76ee28f-811a-4dfc-90b0-69a03bd491e3' and assignee='986f2711-1087-406d-bd0e-5a2d3236d2aa';
