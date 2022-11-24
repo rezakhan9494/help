@@ -1,3 +1,8 @@
 SELECT dbs.datname, roles.rolname
   FROM pg_catalog.pg_database dbs, pg_catalog.pg_roles roles
  WHERE dbs.datdba = roles.oid;
+
+
+
+select ebb.applicationno, ell.ownershipcategory, ell.additionaldetails from public.eg_bpa_buildingplan ebb inner join 
+public.eg_land_landinfo ell on ell.id = ebb.landid order by ell.ownershipcategory asc ;
