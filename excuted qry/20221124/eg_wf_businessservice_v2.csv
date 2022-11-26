@@ -1,5 +1,0 @@
-"businessservice","business","tenantid","uuid","geturi","posturi","createdby","createdtime","lastmodifiedby","lastmodifiedtime","businessservicesla"
-"BPA3","bpa-services","od","d44b9132-8e9e-4c7d-8d2b-6cc6f2884476",NULL,NULL,"5c4504e7-40e9-47e9-850e-1b33e699b879",1613047778828,"5c4504e7-40e9-47e9-850e-1b33e699b879",1656086075663,5184000000
-"BPA1","bpa-services","od","30ee8cdc-28b9-4f10-a594-c62fef39e87a",NULL,NULL,"5c4504e7-40e9-47e9-850e-1b33e699b879",1613047969974,"5c4504e7-40e9-47e9-850e-1b33e699b879",1656085823890,5184000000
-"BPA2","bpa-services","od","85da1822-1eac-4a97-88dd-41af66a697ee",NULL,NULL,"5c4504e7-40e9-47e9-850e-1b33e699b879",1613047885617,"5c4504e7-40e9-47e9-850e-1b33e699b879",1656085956478,5184000000
-"BPA6","bpa-services","od","efd46529-32b3-4c58-b47b-731643dcec9b",NULL,NULL,"5c4504e7-40e9-47e9-850e-1b33e699b879",1662373178919,"5c4504e7-40e9-47e9-850e-1b33e699b879",1662373178919,5184000000
