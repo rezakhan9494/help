@@ -6,3 +6,9 @@ SELECT dbs.datname, roles.rolname
 
 select ebb.applicationno, ell.ownershipcategory, ell.additionaldetails from public.eg_bpa_buildingplan ebb inner join 
 public.eg_land_landinfo ell on ell.id = ebb.landid order by ell.ownershipcategory asc ;
+
+
+"BP-BDA-2022-10-27-009707"
+"BP-BMC-2022-04-21-002732"
+"BP-BMC-2022-10-27-009696"
+"BP-BMC-2022-10-29-009827"
