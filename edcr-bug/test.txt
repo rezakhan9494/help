@@ -17,3 +17,5 @@ filestore/generic/Digit DCR/February/12/1613105598863RAJSHREE SAHOO.VER 2.dxf
 
 select dxffileid,reportoutputid ,plandetailfilestore, scrutinizeddxffileid from generic.edcr_application_detail ead where dcrnumber = 'DCR112022OHGNB';
 
+diskFileStorage
+generic
