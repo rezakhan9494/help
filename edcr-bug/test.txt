@@ -19,3 +19,6 @@ select dxffileid,reportoutputid ,plandetailfilestore, scrutinizeddxffileid from 
 
 diskFileStorage
 generic
+
+
+select ebd.filestoreid,  ef.filestoreid from public.eg_bpa_document ebd  left join public.eg_filestoremap ef ON ef.filestoreid = ebd.filestoreid where  ef.filestoreid = null
