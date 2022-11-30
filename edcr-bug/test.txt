@@ -1,0 +1,5 @@
+select * from generic.edcr_application  where applicationnumber = '52617-2022-ZO';
+
+select * from generic.edcr_application_detail where application =52802;
+
+select * from generic.eg_filestoremap where id in (214517,214519)
