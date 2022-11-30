@@ -13,3 +13,7 @@ ebadeb3c-7c64-41ba-aab6-b7eaf2086d75
 APPROVAL -12 -FINAL_system_scrutinized.dxf
 
 filestore/generic/Digit DCR/February/12/1613105598863RAJSHREE SAHOO.VER 2.dxf
+
+
+select dxffileid,reportoutputid ,plandetailfilestore, scrutinizeddxffileid from generic.edcr_application_detail ead where dcrnumber = 'DCR112022OHGNB';
+
